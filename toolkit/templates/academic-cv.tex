@@ -1,0 +1,107 @@
+% CV académico — plantilla mínima
+% Compila con pdflatex sin paquetes exóticos. Funciona en Overleaf sin configurar nada.
+% Reemplaza TODO lo que esté entre corchetes. Borra las secciones que no apliquen:
+% una sección vacía resta más de lo que suma.
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+% Secciones en versalitas con una regla debajo: convención académica sobria.
+\titleformat{\section}{\large\scshape}{}{0em}{}[\vspace{-0.6em}\rule{\textwidth}{0.4pt}]
+\titlespacing{\section}{0pt}{1.2em}{0.5em}
+
+\setlist[itemize]{leftmargin=1.2em, itemsep=0.15em, topsep=0.25em}
+\pagestyle{empty}
+
+% Encabezado de entrada: título a la izquierda, fecha a la derecha.
+\newcommand{\entry}[2]{\noindent\textbf{#1}\hfill #2\par}
+
+\begin{document}
+
+%========================= HEADER =========================
+\begin{center}
+  {\LARGE \textbf{[Nombre Completo]}}\\[0.4em]
+  [correo@institucional.edu.pe] $\cdot$ [Ciudad, Perú]\\
+  \href{[url-scholar]}{Google Scholar} $\cdot$
+  \href{[url-github]}{GitHub} $\cdot$
+  \href{[url-sitio]}{Sitio personal}
+\end{center}
+
+%========================= EDUCATION =========================
+\section{Education}
+
+\entry{[B.Sc. in Computer Science], [Universidad]}{[2021--2026]}
+\begin{itemize}
+  \item Cumulative average: [16.2]/20 ([Quinto Superior] --- top [20]\% of a cohort of [142])
+  \item Thesis: \emph{[Título de la tesis]} --- Advisor: Prof.\ [Nombre]
+  \item Relevant coursework: [Machine Learning, Distributed Systems, Numerical Methods]
+\end{itemize}
+
+%========================= PUBLICATIONS =========================
+% Borra esta sección completa si no tienes publicaciones. Es normal no tenerlas
+% al postular a una maestría; una sección vacía llama la atención hacia el vacío.
+\section{Publications and Preprints}
+\begin{enumerate}[leftmargin=1.4em]
+  \item [Apellido, N.], \textbf{[Tu Apellido, N.]}, [Apellido, N.]
+        ``[Título del trabajo].'' \emph{[Venue]}, [año].
+        \href{[doi-o-repo]}{[DOI / repositorio]}
+\end{enumerate}
+
+%========================= RESEARCH =========================
+\section{Research Experience}
+
+\entry{[Undergraduate Researcher], [Laboratorio], [Universidad]}{[2025--2026]}
+\begin{itemize}
+  \item Investigated [problema]. Implemented [método] in [herramienta] and
+        evaluated against [baseline] on [dataset, tamaño].
+  \item Achieved [métrica], a [X]\% improvement over [baseline].
+  \item Code and experiment logs: \href{[url]}{[repositorio]}
+\end{itemize}
+
+%========================= TECHNICAL =========================
+% Tu experiencia de industria, reencuadrada: método, baseline, número.
+% Nada de métricas de negocio sin traducir.
+\section{Technical Experience}
+
+\entry{[Software Engineer], [Empresa]}{[2024--2026]}
+\begin{itemize}
+  \item Built and profiled [sistema] serving [escala].
+  \item Reduced [métrica técnica] from [X] to [Y] through [técnica específica].
+  \item Designed the benchmarking harness used to validate the change.
+\end{itemize}
+
+%========================= SOFTWARE =========================
+\section{Scientific Software and Open Source}
+\begin{itemize}
+  \item \href{[url]}{\textbf{[repo-name]}} --- [una línea sobre qué hace].
+        [Lenguaje]. Includes a Dockerfile and a fixed-seed evaluation script.
+\end{itemize}
+
+%========================= AWARDS =========================
+\section{Honors and Awards}
+\begin{itemize}
+  \item [Premio o beca], [otorgante], [año]
+\end{itemize}
+
+%========================= SKILLS =========================
+\section{Technical Proficiencies}
+\begin{itemize}
+  \item \textbf{Languages:} [Python, C++, Rust, TypeScript]
+  \item \textbf{Research stack:} [PyTorch, CUDA, NumPy, SciPy]
+  \item \textbf{Tooling:} [Docker, Git, SLURM, \LaTeX]
+\end{itemize}
+
+%========================= LANGUAGES =========================
+\section{Languages}
+\begin{itemize}
+  \item Spanish (native) $\cdot$ English ([C1] --- [IELTS 7.5, 2026])
+\end{itemize}
+
+\end{document}
