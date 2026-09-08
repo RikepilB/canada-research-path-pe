@@ -42,6 +42,24 @@ La carpeta [`dosier/`](dosier/) conserva material de análisis más extenso. Pue
 
 Cada afirmación del dosier usa marcadores de confianza: `[XX]` doble verificación, `[X ]` fuente única, `[~ ]` práctica general y `[!!]` no verificado.
 
+## Toolkit de postulación
+
+La carpeta [`toolkit/`](toolkit/) reúne el material práctico para postular. Las explicaciones están en español; las plantillas, en inglés, porque es el idioma en que las vas a enviar.
+
+| Documento | Qué aporta |
+|---|---|
+| [Cold emails](toolkit/outreach/cold-emails.md) | Ocho plantillas: supervisor de posgrado, Mitacs GRA, estancia ELAP, seguimiento, respuesta a "no tengo financiamiento", respuesta a un rechazo, pasantía a posgrado y pedido de carta. Con calendario de envío y antipatrones. |
+| [CV académico](toolkit/applications/academic-cv.md) | Por qué un currículum de software no sirve y cómo traducir cada viñeta al registro académico. |
+| [Statement of Purpose](toolkit/applications/statement-of-purpose.md) | Estructura de tres bloques, con ejemplos y los errores que hunden un SOP. |
+| [Equivalencias de notas](toolkit/applications/grade-equivalencies.md) | Por qué un comité canadiense lee 16/20 como un B, y cómo lo corrige la constancia de Quinto o Décimo Superior. |
+| [Plantilla LaTeX](toolkit/templates/academic-cv.tex) | CV académico que compila en Overleaf sin configurar nada. |
+| [Literatura](toolkit/literature/discovery-synthesis.md) | Connected Papers, Litmaps, Elicit, Semantic Scholar y Zotero. |
+| [Presencia web](toolkit/portfolio/web-presence.md) | AcademicPages, Scilio y Google Scholar, en orden de prioridad. |
+
+La carpeta [`canada/`](canada/) explica el contexto estructural: el [modelo "supervisor primero"](canada/admissions/supervisor-model.md) y los [permisos migratorios](canada/immigration/permits.md).
+
+Cada documento declara su procedencia al final. El contenido factual proviene de una guía de investigación con fuentes primarias citadas, pero ninguna se pudo verificar contra el sitio oficial al redactarlo.
+
 ## Empieza en tres pasos
 
 ### 1. Abre el buscador
@@ -185,7 +203,9 @@ GitHub Actions repite automáticamente las pruebas, la validación y la construc
 ├── scripts/            # Generador del HTML autónomo
 ├── dist/               # Archivo descargable
 ├── test/               # Pruebas del catálogo
-└── docs/               # Diseño, arquitectura y operación
+├── docs/               # Diseño, arquitectura y operación
+├── toolkit/            # Plantillas de postulación en inglés
+└── canada/             # Contexto de admisiones e inmigración
 ```
 
 ## Principios del proyecto
