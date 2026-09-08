@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Isabel Agreda Sobrino",
+    "program": "ELAP",
+    "origin": "Ingeniería Biomédica · UPC",
+    "destination": "University of Alberta",
+    "year": "2026",
+    "result": "Pasantía de investigación de cuatro meses y reconocimiento Outstanding Visiting Researcher en FURCA.",
+    "lesson": "Una estancia corta puede producir resultados visibles cuando el proyecto y el laboratorio están bien alineados.",
+    "sourceUrl": "https://noticias.upc.edu.pe/2026/05/13/estudiante-upc-premio-investigacion-canada/"
+  },
+  {
+    "name": "Cohorte UTEC de 16 estudiantes",
+    "program": "ELAP",
+    "origin": "Bioingeniería, Ambiental, Civil, Energía, Química y Mecatrónica · UTEC",
+    "destination": "University of Alberta",
+    "year": "2024–2025",
+    "result": "Dieciséis estudiantes de pregrado obtuvieron estancias de investigación de cuatro meses.",
+    "lesson": "La oficina internacional y un convenio activo pueden convertir una beca federal en una ruta repetible para una cohorte completa.",
+    "sourceUrl": "https://utec.edu.pe/noticias/alumnos-utec-ganan-beca-elap-2024-2025"
+  },
+  {
+    "name": "Kiara Olaya",
+    "program": "ELAP",
+    "origin": "Ingeniería Industrial · UPN",
+    "destination": "Centennial College",
+    "year": "2025",
+    "result": "Intercambio con aprendizaje en operaciones, cadena de suministro, metodologías ágiles e inglés.",
+    "lesson": "La experiencia también puede fortalecer el proyecto de tesis y preparar una futura maestría.",
+    "sourceUrl": "https://www.upn.edu.pe/noticias/conoce-kiara-olaya-becaria-del-emerging-leaders-americas-program-elap-en-canada"
+  },
+  {
+    "name": "Silvia Victoria Sotelo Gerónimo",
+    "program": "ELAP",
+    "origin": "Ingeniería Ambiental · ESAN",
+    "destination": "York University",
+    "year": "2021",
+    "result": "Beneficiaria ELAP publicada por la oficina internacional de ESAN.",
+    "lesson": "Revisa la página de becas de tu propia universidad: muchas nominaciones se gestionan allí y no en el portal federal.",
+    "sourceUrl": "https://www.ue.edu.pe/pregrado/internacional/becas-internacional"
+  },
+  {
+    "name": "Jesús Fajardo",
+    "program": "ELAP · ejemplo regional",
+    "origin": "Doctorado en Argentina; originario de Venezuela",
+    "destination": "University of Manitoba",
+    "year": "2019",
+    "result": "Investigó imagen por microondas e inteligencia artificial en un laboratorio referente en su campo.",
+    "lesson": "Su consejo oficial: postular aunque todavía no conozcas a personas en instituciones canadienses; la afinidad científica abre la conversación.",
+    "sourceUrl": "https://www.educanada.ca/scholarships-bourses/news-nouvelles/2026/2026-01-22.aspx?lang=eng"
+  }
+]

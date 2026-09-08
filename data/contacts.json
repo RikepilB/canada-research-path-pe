@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Administrador de becas EduCanada",
+    "scope": "ELAP y programas de becas del Gobierno de Canadá",
+    "contact": "Scholarships-Info-Bourses@international.gc.ca · +1 613-237-4820",
+    "url": "https://www.educanada.ca/contact_us-contactez_nous.aspx?lang=eng"
+  },
+  {
+    "name": "Mitacs Helpdesk",
+    "scope": "Elegibilidad y soporte de Globalink",
+    "contact": "helpdesk@mitacs.ca",
+    "url": "https://www.mitacs.ca/our-programs/globalink-research-internship-students/"
+  },
+  {
+    "name": "CALAREO",
+    "scope": "Movilidad y colaboración Canadá–América Latina",
+    "contact": "calareo.research@lakeheadu.ca",
+    "url": "https://calareo.ca/contact/"
+  },
+  {
+    "name": "UTEC International",
+    "scope": "ELAP y movilidad para estudiantes UTEC",
+    "contact": "international@utec.edu.pe",
+    "url": "https://utec.edu.pe/noticias/alumnos-utec-ganan-beca-elap-2024-2025"
+  },
+  {
+    "name": "UNMSM Movilidad",
+    "scope": "Convocatorias históricas ELAP de UNMSM; confirmar vigencia",
+    "contact": "movilidad.ogcri@unmsm.edu.pe",
+    "url": "https://cooperacion.unmsm.edu.pe/index.php/2023/02/03/becas-del-emerging-leaders-in-the-americas-program-2023-2024/"
+  },
+  {
+    "name": "ESAN Oficina Internacional",
+    "scope": "Intercambio y ELAP para estudiantes ESAN",
+    "contact": "exchange@esan.edu.pe",
+    "url": "https://www.ue.edu.pe/pregrado/internacional/becas-internacional"
+  },
+  {
+    "name": "University of Regina Global Mobility",
+    "scope": "Movilidad e investigación visitante",
+    "contact": "global.mobility@uregina.ca",
+    "url": "https://www.uregina.ca/ur-international/study-abroad/"
+  },
+  {
+    "name": "University of Saskatchewan International Office",
+    "scope": "Visiting Research Students",
+    "contact": "international.office@usask.ca",
+    "url": "https://internationaloffice.usask.ca/international-visiting-research-student-scholarship-programs.php"
+  }
+]

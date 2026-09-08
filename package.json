@@ -1,0 +1,19 @@
+{
+  "name": "canada-research-path-pe",
+  "version": "1.0.0",
+  "description": "Guía y CLI en español para rutas de investigación entre Perú y Canadá",
+  "type": "module",
+  "bin": {
+    "canada-research-path": "bin/canada-research-path.mjs"
+  },
+  "scripts": {
+    "build": "node scripts/build-standalone.mjs",
+    "test": "node --test",
+    "validate": "node bin/canada-research-path.mjs validate",
+    "serve": "python -m http.server 8765"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
