@@ -1,0 +1,943 @@
+<title>Canada Funding Routes</title>
+<style>
+  /* Light palette lives on bare :root so no color is defined ONLY inside a
+     media query — a viewer on "system" theme gets a complete set either way. */
+  :root {
+    --bg: #f7f6f3;
+    --surface: #ffffff;
+    --surface-2: #f0eee9;
+    --border: #ddd8ce;
+    --border-strong: #c3bcae;
+    --ink: #1c1a17;
+    --ink-2: #55504a;
+    --ink-3: #837c72;
+    --accent: #1f6f6b;
+    --accent-ink: #ffffff;
+    --urgent-bg: #fdf0e7;
+    --urgent-ink: #9a4a12;
+    --closed-bg: #f2eceb;
+    --closed-ink: #8a5a5a;
+    --open-bg: #e9f2ec;
+    --open-ink: #266344;
+    --yes: #266344;
+    --maybe: #8a6420;
+    --no: #97403f;
+    --shadow: 0 1px 2px rgba(28,26,23,.05), 0 6px 18px rgba(28,26,23,.05);
+    --radius: 10px;
+  }
+  /* Guarded so an explicit light choice wins over the OS preference. */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141512;
+      --surface: #1c1e1a;
+      --surface-2: #23261f;
+      --border: #33372e;
+      --border-strong: #4a4f42;
+      --ink: #eceadf;
+      --ink-2: #b3b0a3;
+      --ink-3: #85826f;
+      --accent: #6fbdb2;
+      --accent-ink: #10201d;
+      --urgent-bg: #33220f;
+      --urgent-ink: #f0b483;
+      --closed-bg: #2b1f1f;
+      --closed-ink: #d09b9b;
+      --open-bg: #17281f;
+      --open-ink: #8ad0a8;
+      --yes: #8ad0a8;
+      --maybe: #dcb162;
+      --no: #e28f8e;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25);
+    }
+  }
+  /* Repeated for the explicit toggle so it wins in both directions. */
+  :root[data-theme="dark"] {
+    --bg: #141512; --surface: #1c1e1a; --surface-2: #23261f;
+    --border: #33372e; --border-strong: #4a4f42;
+    --ink: #eceadf; --ink-2: #b3b0a3; --ink-3: #85826f;
+    --accent: #6fbdb2; --accent-ink: #10201d;
+    --urgent-bg: #33220f; --urgent-ink: #f0b483;
+    --closed-bg: #2b1f1f; --closed-ink: #d09b9b;
+    --open-bg: #17281f; --open-ink: #8ad0a8;
+    --yes: #8ad0a8; --maybe: #dcb162; --no: #e28f8e;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25);
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.6 ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 32px 20px 80px; }
+  h1, h2, h3 { line-height: 1.25; letter-spacing: -.01em; margin: 0; }
+  h1 { font-size: clamp(26px, 4vw, 36px); }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px;
+  }
+  .skip {
+    position: absolute; left: -9999px;
+    background: var(--accent); color: var(--accent-ink);
+    padding: 8px 14px; border-radius: 6px; z-index: 10;
+  }
+  .skip:focus { left: 20px; top: 12px; }
+
+  header .eyebrow {
+    font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-3); font-weight: 600; margin-bottom: 10px;
+  }
+  header p.lede { color: var(--ink-2); max-width: 66ch; margin: 12px 0 0; font-size: 16px; }
+
+  .banner {
+    margin: 26px 0 0; padding: 14px 16px;
+    background: var(--surface-2); border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius); font-size: 13.5px; color: var(--ink-2);
+  }
+  .banner strong { color: var(--ink); }
+
+  fieldset {
+    margin: 30px 0 0; padding: 16px 18px;
+    border: 1px solid var(--border); border-radius: var(--radius);
+    background: var(--surface);
+  }
+  legend { padding: 0 8px; font-weight: 650; font-size: 13px; color: var(--ink); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .chip { position: relative; }
+  .chip input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+  .chip span {
+    display: block; padding: 7px 13px; border-radius: 999px;
+    border: 1px solid var(--border-strong); background: var(--surface-2);
+    font-size: 13px; cursor: pointer; user-select: none; color: var(--ink-2);
+  }
+  .chip input:checked + span {
+    background: var(--accent); border-color: var(--accent);
+    color: var(--accent-ink); font-weight: 600;
+  }
+  .chip input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .hint { margin: 12px 0 0; font-size: 13px; color: var(--ink-3); }
+
+  .grid {
+    display: grid; gap: 14px; margin-top: 22px;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  }
+  .card {
+    display: flex; flex-direction: column; gap: 10px;
+    text-align: left; width: 100%;
+    padding: 18px; border-radius: var(--radius);
+    border: 1px solid var(--border); background: var(--surface);
+    box-shadow: var(--shadow); cursor: pointer;
+    font: inherit; color: inherit;
+    transition: transform .12s ease, border-color .12s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--border-strong); }
+  .card[data-dim="true"] { opacity: .42; }
+  .card .flag { font-size: 20px; line-height: 1; }
+  .card h3 { font-size: 16.5px; }
+  .card .funder { font-size: 12.5px; color: var(--ink-3); }
+  .card .oneliner { font-size: 13.5px; color: var(--ink-2); flex: 1; }
+  .card .foot {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 10px; font-size: 12.5px; color: var(--ink-2);
+    border-top: 1px solid var(--border); padding-top: 10px; margin-top: 2px;
+  }
+
+  .pill {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 9px; border-radius: 999px;
+    font-size: 11.5px; font-weight: 620; white-space: nowrap;
+  }
+  .pill.urgent { background: var(--urgent-bg); color: var(--urgent-ink); }
+  .pill.closed { background: var(--closed-bg); color: var(--closed-ink); }
+  .pill.open   { background: var(--open-bg);   color: var(--open-ink); }
+  .pill.rolling{ background: var(--surface-2); color: var(--ink-2); }
+
+  .fit { font-weight: 650; font-size: 12.5px; }
+  .fit[data-v="yes"]   { color: var(--yes); }
+  .fit[data-v="maybe"] { color: var(--maybe); }
+  .fit[data-v="no"]    { color: var(--no); }
+
+  /* Detail view ---------------------------------------------------------- */
+  .detail { margin-top: 8px; }
+  .back {
+    background: none; border: 1px solid var(--border-strong); color: var(--ink-2);
+    padding: 6px 12px; border-radius: 999px; font: inherit; font-size: 13px;
+    cursor: pointer; margin-bottom: 20px;
+  }
+  .back:hover { border-color: var(--accent); color: var(--accent); }
+  .detail h2 { font-size: clamp(22px, 3.4vw, 30px); margin-bottom: 6px; }
+  .detail .sub { color: var(--ink-3); font-size: 13.5px; }
+  .panel {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 18px 20px; margin-top: 18px;
+  }
+  .panel > h3 {
+    font-size: 12px; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--ink-3); margin-bottom: 12px;
+  }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; min-width: 460px; }
+  th, td { text-align: left; padding: 9px 12px 9px 0; vertical-align: top; border-bottom: 1px solid var(--border); }
+  th { color: var(--ink-3); font-weight: 600; width: 34%; }
+  tr:last-child th, tr:last-child td { border-bottom: none; }
+  .src { font-size: 11px; color: var(--ink-3); }
+  .src[data-c="single"]::before { content: "◐ "; }
+  .src[data-c="cross"]::before  { content: "● "; }
+
+  ul.clean { margin: 0; padding-left: 18px; }
+  ul.clean li { margin-bottom: 7px; font-size: 14px; }
+  ul.clean li:last-child { margin-bottom: 0; }
+
+  .gates { display: grid; gap: 10px; }
+  .gate {
+    display: grid; grid-template-columns: 88px 1fr; gap: 12px;
+    align-items: start; font-size: 13.5px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .gate:last-child { border-bottom: none; padding-bottom: 0; }
+  .gate .who { color: var(--ink-3); font-size: 12.5px; padding-top: 1px; }
+
+  .vid {
+    display: block; padding: 12px 14px; margin-bottom: 8px;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface-2); text-decoration: none; color: inherit;
+  }
+  .vid:hover { border-color: var(--accent); }
+  .vid .t { font-weight: 600; font-size: 13.5px; color: var(--accent); }
+  .vid .m { font-size: 12px; color: var(--ink-3); margin-top: 3px; }
+
+  .warn {
+    background: var(--urgent-bg); color: var(--urgent-ink);
+    border-radius: 8px; padding: 12px 14px; font-size: 13.5px;
+  }
+
+  pre {
+    background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 16px; overflow-x: auto;
+    font: 12.5px/1.65 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    white-space: pre-wrap; color: var(--ink-2); margin: 0;
+  }
+  .copy {
+    background: var(--accent); color: var(--accent-ink); border: none;
+    padding: 7px 14px; border-radius: 6px; font: inherit; font-size: 13px;
+    font-weight: 600; cursor: pointer; margin-bottom: 10px;
+  }
+  code.inline {
+    background: var(--surface-2); border: 1px solid var(--border);
+    padding: 1px 6px; border-radius: 4px; font-size: 12.5px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .cols { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--border);
+           font-size: 12.5px; color: var(--ink-3); }
+
+  .phases { display: grid; gap: 8px; margin-top: 14px; }
+  details {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface-2); overflow: hidden;
+  }
+  details[open] { border-color: var(--border-strong); }
+  summary {
+    cursor: pointer; padding: 12px 14px; font-size: 14px; font-weight: 600;
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+    list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "\25B8"; color: var(--ink-3); font-size: 11px; }
+  details[open] > summary::before { content: "\25BE"; }
+  summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .ph {
+    font-size: 11px; letter-spacing: .07em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700;
+  }
+  .dur { font-size: 12px; color: var(--ink-3); font-weight: 400; margin-left: auto; }
+  .pbody { padding: 0 16px 16px; font-size: 14px; color: var(--ink-2); }
+  .pbody p { margin: 0 0 10px; }
+  .pbody p:last-child { margin-bottom: 0; }
+  .pbody strong { color: var(--ink); }
+  .pbody ol.clean { padding-left: 20px; }
+  p.tip {
+    background: var(--surface); border-left: 3px solid var(--accent);
+    padding: 10px 12px; border-radius: 0 6px 6px 0; font-size: 13.5px;
+  }
+</style>
+
+<a class="skip" href="#main">Skip to programs</a>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Research funding · Canada &amp; Peru</p>
+  <h1>Canada Funding Routes</h1>
+  <p class="lede">
+    Five funding programs, sorted by whether you can actually apply to them right now —
+    not by how good the YouTube videos are. Click any card for the full detail view.
+  </p>
+  <div class="banner">
+    <strong>Read this before trusting a number on this page.</strong>
+    Every official site (mitacs.ca, educanada.ca, mccallmacbainscholars.org, pronabec.gob.pe)
+    was unreachable from the environment that built this page — network egress was blocked.
+    Figures below come from search-result summaries and secondary aggregators, cross-checked
+    where two independent results agreed. <strong>Confirm every deadline and dollar figure on the
+    official page before you act on it.</strong> Each card links to its source.
+    Compiled 7&nbsp;September&nbsp;2026.
+  </div>
+</header>
+
+<main id="main">
+  <section id="view-grid">
+    <fieldset>
+      <legend>Where are you right now?</legend>
+      <div class="chips" role="radiogroup" aria-label="Your current academic status">
+        <label class="chip"><input type="radio" name="status" value="ug2" checked><span>Undergrad, 2+ years done</span></label>
+        <label class="chip"><input type="radio" name="status" value="ugFinal"><span>Final-year undergrad</span></label>
+        <label class="chip"><input type="radio" name="status" value="newGrad"><span>Graduated, not enrolled</span></label>
+        <label class="chip"><input type="radio" name="status" value="grad"><span>Enrolled in a master's/PhD</span></label>
+      </div>
+      <p class="hint" id="filter-hint"></p>
+    </fieldset>
+
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <section id="view-detail" hidden></section>
+
+  <section id="flow">
+    <div class="panel">
+      <h3>The flow — application to arrival</h3>
+      <p style="margin:0 0 4px;font-size:14px;color:var(--ink-2)">
+        This is the supervisor-driven research route (Mitacs GRA, ELAP research placements,
+        direct lab outreach). The Mitacs internship is the exception — it is portal-driven,
+        you pick from a posted project list rather than courting a supervisor. Divergences
+        are marked. Realistic lead time from first email to landing in Canada:
+        <strong>9 to 12 months</strong>.
+      </p>
+      <div class="phases">
+        <details>
+          <summary><span class="ph">Phase 0</span> Eligibility triage <span class="dur">one evening</span></summary>
+          <div class="pbody">
+            <p>Kill the programs you cannot use before you write a word. Most wasted effort dies at a gate the applicant could have checked on day one. The four that actually disqualify people:</p>
+            <ol class="clean">
+              <li><strong>Enrolment status.</strong> The internship needs current full-time undergrad enrolment; the Research Award needs senior-undergrad, grad or postdoc enrolment; ELAP needs enrolment at a Latin American or Caribbean institution you will return to. A conferred degree with no current enrolment fails all three.</li>
+              <li><strong>Institution-level eligibility, not country-level.</strong> Peru appears on the Mitacs 2027 country list, but your specific university must also be on the eligible-institution list. This is the most common silent rejection — the country list gets quoted in blog posts, the institution list does not.</li>
+              <li><strong>Semesters remaining.</strong> The internship reportedly requires one to three semesters still remaining as of fall 2027. Graduating too early disqualifies you as surely as graduating too late.</li>
+              <li><strong>Which deadline tier.</strong> McCall MacBain has two, four weeks apart, decided by where you studied.</li>
+            </ol>
+            <p class="tip">Write these four answers down before reading another program page. If you cannot answer #2 from the official list, email Mitacs and ask. A one-line reply beats a week of guessing.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="ph">Phase 1</span> Target selection <span class="dur">2–3 weeks</span></summary>
+          <div class="pbody">
+            <p><strong>Portal route (Mitacs internship).</strong> Browse posted projects and submit a shortlist — reportedly at least 3 and no more than 10, drawn from at least 3 different provinces. The province constraint is not bureaucratic noise; it forces geographic spread so matching has room. Do not submit ten projects at three Toronto labs. Rank honestly — a project you would decline if offered is a slot you wasted.</p>
+            <p><strong>Supervisor route (Research Award, ELAP research, direct outreach).</strong> You find the lab yourself:</p>
+            <ul class="clean">
+              <li>Start from papers, not rankings. Find 3–4 recent papers you can actually read and care about. The corresponding author is your target.</li>
+              <li>Check they are still at that institution and still active — a 2023 paper does not mean a 2026 lab.</li>
+              <li>Check the lab page for an explicit "not taking students" notice before writing. Ignoring one is an instant no.</li>
+              <li>Build a list of 15–20. Expect roughly a 10–20% reply rate on cold, well-targeted email.</li>
+            </ul>
+            <p class="tip">Overlap beats prestige. A mid-ranked supervisor whose exact subfield matches yours says yes far more often than a famous lab where you are one of 200 identical emails.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="ph">Phase 2</span> The supervisor email <span class="dur">the real bottleneck</span></summary>
+          <div class="pbody">
+            <p>Applies to the Research Award and ELAP; skip it on the internship portal route. The Research Award has no open portal — without a committed host supervisor there is nothing to submit. Your route in is a person, not a form.</p>
+            <p><strong>Under 200 words, four paragraphs:</strong></p>
+            <ul class="clean">
+              <li><strong>Subject line —</strong> concrete. "Prospective Mitacs Globalink intern — [your subfield]" beats "Research opportunity inquiry".</li>
+              <li><strong>¶1, two sentences —</strong> who you are, what you study, when you are available.</li>
+              <li><strong>¶2, three or four sentences —</strong> the specific paper of theirs you read and one concrete thought about it: an extension, a question, a dataset it could apply to. <em>This paragraph is the entire email.</em> Everything else is packaging.</li>
+              <li><strong>¶3, two sentences —</strong> what you bring, concretely. "I implemented X in PyTorch and shipped Y" beats "I am passionate about research".</li>
+              <li><strong>¶4, one sentence —</strong> the funding. Name the program and say it funds the placement at no cost to their grant. <strong>This is the sentence that converts</strong> — a supervisor who learns the student arrives pre-funded reads the rest of the email differently.</li>
+              <li><strong>Attach —</strong> a one-page CV. Nothing else.</li>
+            </ul>
+            <p class="tip">Send Tuesday–Thursday morning in <em>their</em> timezone. One follow-up after 10–14 days, then move on. Never mass-BCC — academics talk, and a generic email is visible from orbit. If they reply "I have no funding", send the program details immediately; half of those reversals happen right there.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="ph">Phase 3</span> Documents <span class="dur">2–4 weeks, overlaps phase 2</span></summary>
+          <div class="pbody">
+            <ul class="clean">
+              <li>Academic CV, 1–2 pages. Research, publications and technical skills first; retail jobs last or absent.</li>
+              <li>Official transcript. Ordering takes longer than you think — start week one.</li>
+              <li>Statement of purpose, usually 500–1000 words.</li>
+              <li>Two or three reference letters. Give referees 3–4 weeks minimum, plus your CV, the program description, and a bullet list of what you did with them. A referee reconstructing your contribution writes a weak letter.</li>
+              <li>Language proof — IELTS/TOEFL, sometimes TEF/TCF for francophone Quebec institutions. Test slots book out weeks ahead.</li>
+              <li>Passport valid well past the placement end date.</li>
+            </ul>
+            <p class="tip">Start transcripts and reference requests <em>first</em>, before writing anything. They are the only items whose timeline you do not control. And the statement of purpose is where most applications go flat: the failure mode is describing your enthusiasm instead of your fit. If your SOP would work unchanged for a different lab, it is too generic.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="ph">Phase 4</span> Submission</summary>
+          <div class="pbody">
+            <ul class="clean">
+              <li><strong>Mitacs internship —</strong> submit through the Globalink portal by 16 September 2026, 1:00 p.m. Pacific. That is 3:00 p.m. in Lima the same day.</li>
+              <li><strong>Research Award —</strong> your host supervisor or their graduate office drives the submission. Ask for the internal deadline the moment they agree; institution deadlines sit weeks ahead of external ones.</li>
+              <li><strong>ELAP —</strong> apply through your home university's international office or the Canadian host institution's own inbound call. Nothing sent directly to Global Affairs Canada is read under the 2026–27 model.</li>
+              <li><strong>McCall MacBain —</strong> apply yourself, and separately meet McGill's admission requirements for an eligible programme. Two processes, both required.</li>
+            </ul>
+            <p class="tip">Submit 48 hours early. Portals spike on deadline day and no program treats a failed upload as its problem.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="ph">Phase 5</span> Waiting and matching <span class="dur">2–5 months</span></summary>
+          <div class="pbody">
+            <p>A September application feeds a placement the following summer — roughly a nine-month gap. In between: applications are screened for eligibility (gate failures are cut here without review), survivors go to the supervisors whose projects you ranked, a supervisor expresses interest, a match is made, and an award letter issues. That letter is where the exact funding figure is confirmed — Mitacs does not publish one fixed stipend.</p>
+            <p class="tip">Silence in month three is normal, not a rejection. Do not email the program office for status. Do keep a supervisor warm if you have one — a short note with a relevant paper is welcome; "any news?" is not. And apply to more than one thing per season: these timelines are long enough that a single application is a nine-month bet on one outcome.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="ph">Phase 6</span> Accepted — logistics <span class="dur">the expensive phase</span></summary>
+          <div class="pbody">
+            <div class="warn" style="margin-bottom:14px">
+              This is the phase the ELAP winner interview covers, and the phase that could not be extracted — YouTube was blocked when this page was built. Treat everything below as the checklist to verify against that video and official guidance, not as confirmed fact.
+            </div>
+            <p><strong>Immigration.</strong> A short research placement may require a study permit, a work permit, or fall under an exemption depending on length, whether you are paid, and whether the work is academic. Which applies to a 12-week 2027 Mitacs placement is <em>unverified here</em>, and getting it wrong is a boarding-denied error, not a paperwork error. Ask the program in writing the day you are accepted, then confirm against IRCC. Do not take immigration guidance from a 2022 video — this is the single most likely thing on this page to have changed.</p>
+            <p><strong>Money timing.</strong> The gap that catches people: flights and first month's rent fall due <em>before</em> the first stipend arrives. Coverage and reimbursement timing are different questions. Ask explicitly whether airfare is booked for you, reimbursed after you fly, or advanced — the answer decides whether you need roughly CAD 2,000–3,000 of bridge money. Enrolment-fee support is reportedly capped at CAD 300; anything above that is yours.</p>
+            <p><strong>Housing.</strong> Toronto, Vancouver and Montreal are tight, and a summer placement hits the worst window. Ask the host university's international office about on-campus summer residence first — usually cheaper, furnished, and no local credit history required. Off campus, landlords may want Canadian credit history or guarantors you do not have. Mitacs reportedly provides campus student mentors; a mentor who already lives there is worth more than a week of listings research. Never wire a deposit for a place nobody has physically verified.</p>
+            <p><strong>Insurance.</strong> Emergency health insurance is reportedly provided for the internship period. Confirm what it excludes — emergency cover is not health cover.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="ph">Phase 7</span> Arrival and first weeks</summary>
+          <div class="pbody">
+            <ul class="clean">
+              <li>Ask your supervisor for a first-week goal <em>before</em> you fly. Arriving with a defined first task compresses the useless orientation period from three weeks to three days.</li>
+              <li>Bank account and phone plan in week one — many stipend disbursements need a Canadian account.</li>
+              <li>Meet the lab's grad students, not just the PI. They decide whether you get real work or busy work.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="ph">Phase 8</span> Converting it into something</summary>
+          <div class="pbody">
+            <p>Twelve weeks is short. What makes it compound:</p>
+            <ul class="clean">
+              <li>Ask in week two what a publishable contribution would look like. Do not wait until week ten.</li>
+              <li>Start the reference-letter conversation at week eight, while the work is fresh and you are still in the building.</li>
+              <li>The Globalink pathway is explicitly designed to feed graduate study in Canada. If you want to come back for a master's, say so before you leave — a supervisor who knows that writes a different letter than one who thinks you are done.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="toolkit">
+    <div class="panel">
+      <h3>Extraction prompt for the videos</h3>
+      <button class="copy" id="copyBtn" type="button">Copy prompt</button>
+      <pre id="promptText">Transcribe this video in full, then restructure the transcript into a factual brief. Output two sections.
+
+First, a verbatim transcript with speaker labels and rough timestamps every 30 seconds.
+
+Second, an extraction table with these columns: program name, funding body, who is eligible, award value in CAD, duration, deadline mentioned, whether the applicant applies directly or must be nominated, whether a host supervisor is required first, and required documents.
+
+Pull only what the speaker actually says. For anything implied but not stated, mark it "not stated" rather than inferring.
+
+At the end, list every date, dollar figure, and URL mentioned, and flag which claims sound like they could be out of date given the video's upload year.
+
+Do not add advice or context from your own knowledge; this is an extraction task.</pre>
+      <p class="hint">
+        The "do not add context" line is the load-bearing part. If you merge six videos into one
+        dataset, you want the model's inferences kept out of the extraction layer so conflicts
+        stay visible instead of being silently smoothed over.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3>Instagram &amp; TikTok — search these in-app</h3>
+      <p class="hint" style="margin-top:-4px">
+        Neither platform is meaningfully indexed by web search, so these are search strings,
+        not verified links. Nothing here was confirmed to exist.
+      </p>
+      <div class="cols" style="margin-top:14px">
+        <div>
+          <p style="font-size:12.5px;color:var(--ink-3);margin:0 0 8px;font-weight:600">TIKTOK</p>
+          <ul class="clean">
+            <li><code class="inline">mitacs globalink</code> · <code class="inline">#mitacs</code></li>
+            <li><code class="inline">beca ELAP Canadá</code> · <code class="inline">#becaelap</code></li>
+            <li><code class="inline">estudiar en Canadá beca</code> · <code class="inline">#becascanada</code></li>
+            <li><code class="inline">McCall MacBain scholarship</code></li>
+            <li><code class="inline">PRONABEC beca posgrado extranjero</code></li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12.5px;color:var(--ink-3);margin:0 0 8px;font-weight:600">INSTAGRAM — OFFICIAL ACCOUNTS</p>
+          <ul class="clean">
+            <li>@mitacs_canada</li>
+            <li>@educanada</li>
+            <li>@pronabec</li>
+            <li>@mccallmacbain</li>
+          </ul>
+          <p class="hint">Handles unverified — check each resolves before relying on it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Confidence key: <span class="src" data-c="cross">cross-checked across two independent search results</span> ·
+  <span class="src" data-c="single">single source, treat as a lead not a fact</span>.
+  Countdowns compute live in your browser against the deadline timestamps, so this page
+  stays honest about what has closed even if you open it months from now.
+</footer>
+</div>
+
+<script>
+// Deadlines are stored as absolute UTC instants rather than date strings so the
+// countdown is correct regardless of the reader's timezone. Pacific/Eastern
+// local times from the sources were converted at the offset in effect in
+// September 2026 (PDT = UTC-7, EDT = UTC-4).
+const PROGRAMS = [
+  {
+    id: "mccall-macbain",
+    name: "McCall MacBain Scholarship",
+    flag: "\u{1F1E8}\u{1F1E6}",
+    funder: "McCall MacBain Foundation · McGill University",
+    oneliner: "Full ride for a master's or professional degree at McGill. The only program here built for people who have already finished a bachelor's.",
+    award: "Full tuition + CAD $2,300/mo",
+    deadlines: [
+      { label: "Studied outside Canada/US", at: "2026-08-19T20:00:00Z" },
+      { label: "Canadian/US universities + Canadians abroad", at: "2026-09-23T20:00:00Z" }
+    ],
+    route: "Apply directly — no nomination, no supervisor needed",
+    supervisor: false,
+    fit: {
+      ug2:     ["no",    "You must be on track to finish your bachelor's by August 2027. Two years in, you are too early."],
+      ugFinal: ["yes",   "Squarely the target: on track to complete a first bachelor's by August 2027."],
+      newGrad: ["yes",   "Eligible if you earned your first bachelor's in January 2021 or later."],
+      grad:    ["maybe", "It funds a new McGill master's/professional degree. Being mid-programme elsewhere does not disqualify you, but the fit argument gets harder to write."]
+    },
+    facts: [
+      ["Funding body", "McCall MacBain Foundation, administered with McGill University", "cross"],
+      ["Level", "Master's or professional degree at McGill", "cross"],
+      ["Award value", "Full tuition and university fees for the normal duration, plus a CAD $2,300/month living stipend during academic terms, plus a one-time relocation grant to Montréal", "cross"],
+      ["Applications open", "1 June 2026 for the 2027 cohort", "single"],
+      ["Deadline A", "19 August 2026, 4:00 p.m. ET — applicants from universities outside Canada and the US", "cross"],
+      ["Deadline B", "23 September 2026, 4:00 p.m. ET — students and graduates of Canadian and US universities, and Canadians abroad", "cross"],
+      ["Which deadline applies", "Determined mainly by where you study or studied, not by your citizenship", "single"],
+      ["Second requirement", "You must separately meet the admission bar for an eligible McGill master's or professional programme, including language requirements", "cross"]
+    ],
+    eligibility: [
+      "On track to complete your first bachelor's by August 2027, <em>or</em> earned your first bachelor's in January 2021 or later, <em>or</em> earned it more than five years ago and were 30 or younger on 1 January 2026.",
+      "Must independently satisfy McGill's admission requirements for the target programme — the scholarship does not substitute for admission.",
+      "No nomination step. You apply yourself."
+    ],
+    apply: [
+      "Confirm which deadline tier you fall into — it hinges on the location of the university you attend or graduated from, not your passport.",
+      "Check you meet McGill's admission requirements for a specific eligible master's or professional programme first. A scholarship application attached to a programme you cannot get into is wasted effort.",
+      "Apply through apply.mccallmacbainscholars.org."
+    ],
+    warn: "If you studied in Peru, your tier closed on 19 August 2026. The 23 September date is only for Canadian/US university students and graduates, and Canadians abroad. Verify which tier you are in before assuming either way — this single distinction decides whether the 2027 cycle is open to you at all.",
+    url: "https://mccallmacbainscholars.org/apply/",
+    videos: []
+  },
+  {
+    id: "mitacs-gri",
+    name: "Mitacs Globalink Research Internship",
+    flag: "\u{1F52C}",
+    funder: "Mitacs · Government of Canada",
+    oneliner: "12-week funded summer research placement at a Canadian university. Undergraduates only, and the 2027 deadline is days away.",
+    award: "Travel, housing, food, insurance covered",
+    deadlines: [{ label: "2027 cohort", at: "2026-09-16T20:00:00Z" }],
+    route: "Apply directly via the Globalink portal",
+    supervisor: false,
+    fit: {
+      ug2:     ["yes",   "The core target: enrolled full-time, at least two years of undergraduate study behind you."],
+      ugFinal: ["maybe", "Reported rules require one to three semesters still remaining after the internship. If you graduate before then, you are out."],
+      newGrad: ["no",    "Requires current full-time undergraduate enrolment. A conferred degree closes this door — look at the Globalink Research Award instead."],
+      grad:    ["no",    "Undergraduate programme only. The Globalink Research Award is the graduate-level counterpart."]
+    },
+    facts: [
+      ["Funding body", "Mitacs, a Canadian national research organisation", "cross"],
+      ["Level", "Undergraduate, or combined undergraduate/master's", "cross"],
+      ["Duration", "12 weeks", "cross"],
+      ["Deadline", "16 September 2026, 1:00 p.m. Pacific, for the 2027 cohort", "cross"],
+      ["Award value", "No single published stipend figure. Mitacs funds airfare, housing, food and incidentals, enrolment fees (capped at CAD $300) and emergency health insurance; the exact amount is confirmed in the award letter", "single"],
+      ["Eligible countries", "Reported as Austria, Brazil, Chile, China, Colombia, Finland, France, Germany, Hong Kong, India, Jordan, Mexico, Pakistan, Peru, Singapore, South Korea, Taiwan, Thailand, Tunisia, Ukraine, UK, US — Peru included", "single"],
+      ["Project selection", "Apply to at least three and no more than 10 projects, drawn from at least three different Canadian provinces", "single"],
+      ["Country-specific streams", "Some countries route through a national partner with narrower rules — India's AICTE stream, for instance, is restricted to B.E./B.Tech. students", "cross"]
+    ],
+    eligibility: [
+      "At least 18 years old and enrolled full-time in an eligible undergraduate or combined undergraduate/master's programme.",
+      "Normally at least two years of undergraduate study completed, or enrolled in your second year — subject to country-specific conditions.",
+      "Enrolled at an eligible institution in a partner country. <strong>Eligibility is institution-level, not just country-level</strong> — confirm your specific university appears on the Mitacs list.",
+      "Reported requirement of one to three semesters remaining as of fall 2027."
+    ],
+    apply: [
+      "First confirm your specific university is on the Mitacs eligible-institution list for Peru. Country eligibility does not imply institution eligibility, and this is the most common silent rejection.",
+      "Browse and shortlist projects on globalink.mitacs.ca.",
+      "Submit three to ten project choices spanning at least three provinces before 16 September 2026, 1:00 p.m. Pacific."
+    ],
+    warn: "Videos on this program are from 2022–2023 application cycles. Treat their timelines and portal walkthroughs as texture only — the 2027 deadline above supersedes anything they state.",
+    url: "https://www.mitacs.ca/our-programs/globalink-research-internship/",
+    videos: ["3DZPRYGjN5M", "BNLtRvG9LcM", "OBaPmcbxLpg"]
+  },
+  {
+    id: "mitacs-gra",
+    name: "Mitacs Globalink Research Award",
+    flag: "\u{1F393}",
+    funder: "Mitacs · Government of Canada",
+    oneliner: "The graduate-level sibling of the internship. Bidirectional, supervisor-driven, and no public deadline — you build it yourself.",
+    award: "CAD $6,000",
+    deadlines: [],
+    route: "Arrange a host supervisor first, then apply through the Canadian institution",
+    supervisor: true,
+    fit: {
+      ug2:     ["no",    "Senior undergraduates and above. Two years in is too early."],
+      ugFinal: ["maybe", "Senior undergraduates qualify, but you need a host supervisor already committed and a home-institution link."],
+      newGrad: ["no",    "Requires active enrolment as a senior undergrad, graduate student or postdoc. Not enrolled means not eligible."],
+      grad:    ["yes",   "Directly targeted: full-time graduate students with a host supervisor arrangement."]
+    },
+    facts: [
+      ["Funding body", "Mitacs", "cross"],
+      ["Level", "Senior undergraduates, graduate students, postdoctoral fellows", "cross"],
+      ["Award value", "CAD $6,000 for senior undergraduate and graduate students", "single"],
+      ["Duration", "One 12–48 week project, or two 12–24 week projects", "single"],
+      ["Direction", "Inbound to Canada or outbound from Canada — unlike the internship, it runs both ways", "cross"],
+      ["Deadline", "No single public deadline. Administered through Canadian host institutions, so timing is set locally", "cross"],
+      ["Host supervisor", "Required before you apply — this is the gating step, not the paperwork", "cross"]
+    ],
+    eligibility: [
+      "Full-time senior undergraduate, graduate student or postdoctoral fellow.",
+      "A committed host supervisor at the partner institution. <strong>No supervisor, no application</strong> — there is no open portal to apply through without one.",
+      "Application is normally submitted by the Canadian side, which means your route in is a person, not a form."
+    ],
+    apply: [
+      "Identify Canadian labs whose work genuinely overlaps yours. Read two or three recent papers before writing to anyone.",
+      "Email the prospective supervisor with a specific, short proposal. This is the real bottleneck and it runs on months, not weeks.",
+      "Once a supervisor agrees, they or their graduate office drive the Mitacs submission. Ask them for the local deadline early."
+    ],
+    warn: "No verified video coverage found for this program specifically — most creator content covers the internship and conflates the two. Do not assume internship advice transfers.",
+    url: "https://www.mitacs.ca/our-programs/globalink-research-award/",
+    videos: []
+  },
+  {
+    id: "elap",
+    name: "Emerging Leaders in the Americas (ELAP)",
+    flag: "\u{1F30E}",
+    funder: "Global Affairs Canada · EduCanada",
+    oneliner: "Short-term study or research in Canada for students enrolled in Latin America and the Caribbean. The 2026–27 redesign removed the direct student route.",
+    award: "CAD $8,200 / $11,100",
+    deadlines: [],
+    route: "Selected by the Canadian host institution — you cannot apply to Global Affairs directly",
+    supervisor: false,
+    fit: {
+      ug2:     ["maybe", "Eligible in principle if enrolled at a LatAm/Caribbean institution, but you need a Canadian institution running a funded ELAP project that will take you."],
+      ugFinal: ["maybe", "The programme requires you to return to your home institution afterwards, so you need enrolment that outlasts the exchange."],
+      newGrad: ["no",    "You must be enrolled at a post-secondary institution in Latin America or the Caribbean and return to it. A finished degree removes the anchor the programme is built on."],
+      grad:    ["maybe", "Graduate research placements of five to six months carry the higher award, but the same institution-selection gate applies."]
+    },
+    facts: [
+      ["Funding body", "Global Affairs Canada, delivered through EduCanada", "cross"],
+      ["Award value", "CAD $8,200 for college, undergraduate or graduate students for four months or one academic term; CAD $11,100 for graduate students for five to six months of research", "single"],
+      ["Tuition", "Host institutions are required to waive tuition fees entirely", "cross"],
+      ["2026–27 delivery model", "Canadian institutions are now responsible for student selection — a shift away from the previous Global Affairs–centred process", "cross"],
+      ["Institution funding", "Up to $150,000 per project, covering scholarships plus administrative support", "single"],
+      ["Institution results", "Communicated to Canadian institutions in May 2026", "single"],
+      ["Project end date", "Projects must be complete no later than 30 September 2027", "cross"],
+      ["Student deadline", "Not centrally published — set by each Canadian host institution", "cross"]
+    ],
+    eligibility: [
+      "Enrolled at a post-secondary institution in Latin America or the Caribbean, with a commitment to return there after the exchange.",
+      "Selected by a Canadian institution that holds a funded ELAP project. <strong>There is no portal where a student applies to Global Affairs Canada.</strong>",
+      "Scholarship value depends on level and duration, not on need."
+    ],
+    apply: [
+      "Ask your home university's international office which Canadian institutions they hold ELAP agreements with. This is the fastest way in and the step most applicants skip.",
+      "Independently check the ELAP pages of Canadian universities you care about — many post their own inbound calls and internal deadlines.",
+      "Apply through whichever of those two channels exists. Nothing you send to Global Affairs Canada directly will be read."
+    ],
+    warn: "Every verified video below is from 2025 or earlier and describes the pre-redesign, Global Affairs–centred process. They are still useful for housing, flights and lived experience — they are actively misleading on how selection now works.",
+    url: "https://www.educanada.ca/scholarships-bourses/can/institutions/elap-pfla.aspx?lang=eng",
+    videos: ["fgQQn6ks6gQ", "BdKTBsOFqMI", "m96fV4pIAgI"]
+  },
+  {
+    id: "pronabec",
+    name: "PRONABEC — Beca Generación Bicentenario",
+    flag: "\u{1F1F5}\u{1F1EA}",
+    funder: "PRONABEC · Government of Peru",
+    oneliner: "Peru funding its own citizens for a master's or PhD abroad at a top-400 institution. No age limit, and it travels with you.",
+    award: "Tuition + living + flights",
+    deadlines: [],
+    route: "Apply directly to PRONABEC during an open convocatoria",
+    supervisor: false,
+    fit: {
+      ug2:     ["no",    "Requires a conferred bachiller or professional title. Finish the degree first."],
+      ugFinal: ["maybe", "Only once your bachiller is actually conferred — not merely coursework complete."],
+      newGrad: ["yes",   "Built for exactly this: Peruvian professionals with a bachiller or título, strong academic record, limited means."],
+      grad:    ["maybe", "Aimed at funding a postgraduate degree abroad. If you are already enrolled and self-funding, check whether an in-progress programme disqualifies you."]
+    },
+    facts: [
+      ["Funding body", "PRONABEC, Peru's national scholarship and educational credit programme", "cross"],
+      ["Level", "Master's or doctorate, studied in person abroad", "cross"],
+      ["Institution constraint", "Institutions ranked within the top 400 internationally", "single"],
+      ["Age limit", "None", "single"],
+      ["Entry requirement", "Bachiller, professional title, or technical professional title for master's applicants", "single"],
+      ["Means test", "Targets high academic performance combined with insufficient economic resources", "cross"],
+      ["Related programmes", "Beca Presidente de la República (tuition, living, health insurance, flights, settling-in), Beca Alianza del Pacífico, Beca OEA, Beca Posgrado Brasil", "cross"],
+      ["Convocatoria dates", "Vary by cycle and are not fixed year to year — check pronabec.gob.pe directly", "cross"]
+    ],
+    eligibility: [
+      "Peruvian national with a conferred bachiller, professional title or technical professional title.",
+      "Admission or admissibility at an institution inside the top 400 international rankings.",
+      "Demonstrated high academic performance alongside insufficient economic resources — this is a means-tested programme, unlike everything else on this page."
+    ],
+    apply: [
+      "Watch pronabec.gob.pe for the open convocatoria. Dates move between cycles, so a date you read on an aggregator blog is worth nothing.",
+      "Get the institutional admission piece moving in parallel — the ranking constraint narrows your target list considerably.",
+      "Compare against Beca Presidente de la República before committing; the coverage differs and so does the competition."
+    ],
+    warn: "No verified video coverage found. The search string below is a starting point, not a result.",
+    url: "https://www.pronabec.gob.pe/beca-generacion-bicentenario/",
+    videos: []
+  }
+];
+
+// Titles and upload dates confirmed against the web search index. The video
+// pages themselves could not be loaded from the build environment, so treat
+// "exists in the index" as the level of verification actually achieved.
+const VIDEOS = {
+  "3DZPRYGjN5M": { title: "How to apply for the internship? | MITACS GLOBALINK RESEARCH INTERNSHIP | Application Timeline", meta: "22 June 2022 · English · GRI intern at ÉTS Montréal", kind: "watch" },
+  "BNLtRvG9LcM": { title: "(APPLY NOW) FULLY FUNDED INTERNSHIP in CANADA | Mitacs Globalink Research Internship 2023", meta: "16 August 2023 · English · full application walkthrough", kind: "watch" },
+  "OBaPmcbxLpg": { title: "Journey to Mitacs | Suggestion from Mitacs Intern - 2022 for Globalink Internship", meta: "30 August 2022 · English · intern advice", kind: "watch" },
+  "fgQQn6ks6gQ": { title: "¿Quieres una Beca para Estudiar GRATIS en Canadá? | ELAP - alojamiento, vuelos y más!", meta: "5 August 2025 · Spanish · interview with an ELAP winner", kind: "watch" },
+  "BdKTBsOFqMI": { title: "Beca ELAP \u{1F30E}✈️\u{1F1E8}\u{1F1E6}", meta: "19 February 2026 · Spanish · Short, scholar named Diego", kind: "shorts" },
+  "m96fV4pIAgI": { title: "OPORTUNIDADES ACADÉMICAS Y DE INVESTIGACIÓN EN CANADÁ - BECAS ELAP", meta: "8 July 2025 · Spanish · academic and research routes", kind: "watch" }
+};
+
+const FIT_LABEL = { yes: "Good fit", maybe: "Conditional", no: "Not eligible" };
+const STATUS_HINT = {
+  ug2:     "Two years of undergrad behind you — the Mitacs internship is the live one, and it closes in days.",
+  ugFinal: "Graduating soon puts you in the widest position on this page: McCall MacBain opens up while Mitacs may still be reachable.",
+  newGrad: "A conferred degree closes both Mitacs routes and ELAP. What remains is McCall MacBain and PRONABEC — and one of those has a deadline inside three weeks.",
+  grad:    "Enrolled in a postgraduate programme: the Globalink Research Award is your Mitacs route, and it runs on supervisor relationships, not deadlines."
+};
+
+const $ = (sel) => document.querySelector(sel);
+const grid = $("#cards");
+const detailView = $("#view-detail");
+const gridView = $("#view-grid");
+const toolkit = $("#toolkit");
+const flow = $("#flow");
+
+const DAY_MS = 86400000;
+
+/** Turn a deadline instant into a rendered pill plus a sortable urgency rank. */
+function deadlineState(iso) {
+  const ms = new Date(iso).getTime() - Date.now();
+  if (ms < 0) return { cls: "closed", text: "Closed", rank: 9000 };
+  const days = Math.ceil(ms / DAY_MS);
+  if (days <= 30) return { cls: "urgent", text: days + (days === 1 ? " day left" : " days left"), rank: days };
+  return { cls: "open", text: days + " days left", rank: days };
+}
+
+/** A program's headline pill is its most urgent still-open deadline. */
+function headlineDeadline(p) {
+  if (!p.deadlines.length) return { cls: "rolling", text: "No fixed deadline", rank: 5000 };
+  const states = p.deadlines.map((d) => deadlineState(d.at));
+  const open = states.filter((s) => s.cls !== "closed");
+  return open.length ? open.reduce((a, b) => (a.rank <= b.rank ? a : b)) : states[0];
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+function renderCards(status) {
+  $("#filter-hint").textContent = STATUS_HINT[status];
+
+  // Sort by fit first, then urgency. A reader should never have to scan past
+  // programs they cannot apply to in order to find the one closing this month.
+  const order = { yes: 0, maybe: 1, no: 2 };
+  const sorted = [...PROGRAMS].sort((a, b) => {
+    const fa = order[a.fit[status][0]], fb = order[b.fit[status][0]];
+    if (fa !== fb) return fa - fb;
+    return headlineDeadline(a).rank - headlineDeadline(b).rank;
+  });
+
+  grid.innerHTML = sorted.map((p) => {
+    const [verdict] = p.fit[status];
+    const d = headlineDeadline(p);
+    return `
+      <button class="card" type="button" data-id="${p.id}" data-dim="${verdict === "no"}">
+        <span class="flag" aria-hidden="true">${p.flag}</span>
+        <div>
+          <h3>${escapeHtml(p.name)}</h3>
+          <div class="funder">${escapeHtml(p.funder)}</div>
+        </div>
+        <p class="oneliner">${escapeHtml(p.oneliner)}</p>
+        <div class="foot">
+          <span class="fit" data-v="${verdict}">${FIT_LABEL[verdict]}</span>
+          <span class="pill ${d.cls}">${d.text}</span>
+        </div>
+      </button>`;
+  }).join("");
+}
+
+function renderDetail(id) {
+  const p = PROGRAMS.find((x) => x.id === id);
+  if (!p) return showGrid();
+  const status = document.querySelector('input[name="status"]:checked').value;
+
+  const deadlineRows = p.deadlines.length
+    ? p.deadlines.map((d) => {
+        const s = deadlineState(d.at);
+        const when = new Date(d.at).toLocaleString(undefined, {
+          dateStyle: "medium", timeStyle: "short"
+        });
+        return `<tr><th>${escapeHtml(d.label)}</th><td>${when} in your local time
+                <span class="pill ${s.cls}" style="margin-left:6px">${s.text}</span></td></tr>`;
+      }).join("")
+    : `<tr><th>Deadline</th><td>No fixed public deadline — timing is set by the institution you go through.</td></tr>`;
+
+  const videoBlock = p.videos.length
+    ? p.videos.map((v) => {
+        const meta = VIDEOS[v];
+        const href = meta.kind === "shorts"
+          ? "https://www.youtube.com/shorts/" + v
+          : "https://www.youtube.com/watch?v=" + v;
+        return `<a class="vid" href="${href}" target="_blank" rel="noopener noreferrer">
+                  <span class="t">${escapeHtml(meta.title)}</span>
+                  <span class="m">${escapeHtml(meta.meta)}</span>
+                </a>`;
+      }).join("")
+    : `<p class="hint" style="margin:0">No video was verified for this program. Anything you find, run through the extraction prompt before believing a number in it.</p>`;
+
+  detailView.innerHTML = `
+    <div class="detail">
+      <button class="back" type="button" id="backBtn">← All programs</button>
+      <h2 id="detailHeading" tabindex="-1">${p.flag} ${escapeHtml(p.name)}</h2>
+      <p class="sub">${escapeHtml(p.funder)}</p>
+
+      <div class="panel">
+        <h3>Where you stand</h3>
+        <div class="gates">
+          ${Object.entries(p.fit).map(([k, [v, why]]) => `
+            <div class="gate">
+              <span class="who">${k === status ? "▸ " : ""}${escapeHtml({
+                ug2: "Undergrad 2y+", ugFinal: "Final year", newGrad: "New grad", grad: "Grad student"
+              }[k])}</span>
+              <span><span class="fit" data-v="${v}">${FIT_LABEL[v]}</span> — ${why}</span>
+            </div>`).join("")}
+        </div>
+      </div>
+
+      ${p.warn ? `<div class="panel"><h3>What is stale or misleading</h3><div class="warn">${escapeHtml(p.warn)}</div></div>` : ""}
+
+      <div class="panel">
+        <h3>The facts</h3>
+        <div class="tablewrap">
+          <table>
+            <tbody>
+              ${deadlineRows}
+              <tr><th>How you apply</th><td>${escapeHtml(p.route)}</td></tr>
+              <tr><th>Host supervisor needed first</th><td>${p.supervisor ? "Yes — this is the gating step" : "No"}</td></tr>
+              ${p.facts.map(([k, v, c]) =>
+                `<tr><th>${escapeHtml(k)}</th><td>${escapeHtml(v)}<br><span class="src" data-c="${c}">${
+                  c === "cross" ? "cross-checked" : "single source"
+                }</span></td></tr>`).join("")}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Eligibility gates</h3>
+        <ul class="clean">${p.eligibility.map((e) => `<li>${e}</li>`).join("")}</ul>
+      </div>
+
+      <div class="panel">
+        <h3>How to actually move on this</h3>
+        <ul class="clean">${p.apply.map((e) => `<li>${escapeHtml(e)}</li>`).join("")}</ul>
+      </div>
+
+      <div class="panel">
+        <h3>Verified videos</h3>
+        ${videoBlock}
+      </div>
+
+      <div class="panel">
+        <h3>Confirm on the official page</h3>
+        <p style="margin:0;font-size:14px">
+          <a href="${p.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(p.url)}</a>
+        </p>
+        <p class="hint">Nothing on this page was read from that URL directly — egress was blocked when it was built. Every figure above is a lead to confirm, not a citation.</p>
+      </div>
+    </div>`;
+
+  gridView.hidden = true;
+  toolkit.hidden = true;
+  flow.hidden = true;
+  detailView.hidden = false;
+  // Move focus to the new heading so keyboard and screen-reader users are not
+  // left at a button that no longer exists after the view swap.
+  $("#detailHeading").focus();
+  $("#backBtn").addEventListener("click", () => {
+    history.pushState({}, "", location.pathname + location.search);
+    showGrid();
+  });
+}
+
+function showGrid() {
+  detailView.hidden = true;
+  gridView.hidden = false;
+  toolkit.hidden = false;
+  flow.hidden = false;
+  detailView.innerHTML = "";
+}
+
+function route() {
+  const id = location.hash.replace(/^#/, "");
+  if (id && PROGRAMS.some((p) => p.id === id)) renderDetail(id);
+  else showGrid();
+}
+
+grid.addEventListener("click", (e) => {
+  const card = e.target.closest(".card");
+  if (!card) return;
+  location.hash = card.dataset.id;
+});
+
+document.querySelectorAll('input[name="status"]').forEach((r) =>
+  r.addEventListener("change", (e) => renderCards(e.target.value))
+);
+
+window.addEventListener("hashchange", route);
+window.addEventListener("popstate", route);
+
+$("#copyBtn").addEventListener("click", async () => {
+  const btn = $("#copyBtn");
+  const text = $("#promptText").textContent;
+  try {
+    // Clipboard API throws in sandboxed frames and on insecure origins, so the
+    // fallback selects the text instead of silently doing nothing.
+    await navigator.clipboard.writeText(text);
+    btn.textContent = "Copied";
+  } catch (err) {
+    const range = document.createRange();
+    range.selectNodeContents($("#promptText"));
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    btn.textContent = "Selected — press ⌘/Ctrl+C";
+  }
+  setTimeout(() => { btn.textContent = "Copy prompt"; }, 2200);
+});
+
+renderCards("ug2");
+route();
+</script>

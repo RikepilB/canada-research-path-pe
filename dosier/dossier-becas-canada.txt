@@ -1,0 +1,1028 @@
+================================================================
+BECAS E INVESTIGACIÓN EN CANADÁ - DOSIER COMPLETO
+Programas, elegibilidad, proceso de postulación, videos
+Compilado el 7 de septiembre de 2026
+================================================================
+
+CÓMO LEER ESTE ARCHIVO
+----------------------
+Cada afirmación lleva un marcador de confianza:
+
+  [XX] doble verificación - dos resultados de búsqueda
+       independientes coincidieron
+  [X ] fuente única - un solo resumen de búsqueda; es una
+       pista, no un dato confirmado
+  [~ ] práctica general - conocimiento del proceso, no
+       documentado para estos programas en específico
+  [!!] no se pudo verificar - se menciona solo para que sepas
+       que el tema existe
+
+NADA en este archivo se leyó de un sitio web oficial. Todos los
+dominios oficiales (mitacs.ca, educanada.ca,
+mccallmacbainscholars.org, pronabec.gob.pe) y youtube.com
+estuvieron bloqueados por política de red en el entorno donde
+se compiló esto. Los datos vienen de resúmenes de resultados
+de búsqueda. Confirma cada fecha y cada monto en la página
+oficial antes de actuar.
+
+
+================================================================
+1. LO QUE NO PUDE CONSEGUIRTE
+================================================================
+
+Pediste específicamente el detalle de la entrevista a la
+estudiante que ganó ELAP: alojamiento, vuelos, cómo fue en la
+práctica.
+
+No pude ver el video. YouTube estuvo bloqueado a nivel de red,
+por la terminal, por la herramienta de fetch y hasta por el
+endpoint de metadatos oEmbed. Lo que sí confirmé es que el
+video existe, su título y su fecha de publicación, únicamente
+a través del índice de búsqueda.
+
+Entonces: cero detalles de alojamiento, cero logística de
+vuelos, cero citas textuales. Escribirlos habría sido
+inventarlos, y un dato logístico inventado dentro de un plan
+de becas es del tipo de error que cuesta dinero.
+
+La solución está en la sección 7. Abre el video, pásalo a un
+modelo con el prompt de extracción, y tienes la respuesta real
+en unos dos minutos.
+
+
+================================================================
+2. TABLERO DE PLAZOS - lee esto primero
+================================================================
+
+  MITACS GLOBALINK RESEARCH INTERNSHIP (GRI)
+  16 de septiembre de 2026, 1:00 p.m. hora del Pacífico  [XX]
+  -> NUEVE DÍAS desde la fecha de compilación.
+  -> Solo para estudiantes de pregrado matriculados.
+  -> 1:00 p.m. del Pacífico son las 3:00 p.m. en Lima,
+     el mismo día.
+
+  MCCALL MACBAIN - tramo para universidades de
+  Canadá/EE.UU. y canadienses en el exterior
+  23 de septiembre de 2026, 4:00 p.m. hora del Este   [XX]
+  -> DIECISÉIS DÍAS desde la fecha de compilación.
+
+  MCCALL MACBAIN - tramo para todos los demás
+  (universidades fuera de Canadá y EE.UU.)
+  19 de agosto de 2026, 4:00 p.m. hora del Este       [XX]
+  -> YA VENCIÓ.
+
+  MITACS GLOBALINK RESEARCH AWARD (GRA)
+  Sin plazo público - lo fija la institución canadiense
+  anfitriona                                          [XX]
+
+  ELAP
+  Sin plazo central para estudiantes - lo fija la
+  institución canadiense que tiene el proyecto financiado [XX]
+
+  PRONABEC BECA GENERACIÓN BICENTENARIO
+  Varía según convocatoria; no es fija año a año      [XX]
+
+
+LA PARTE INCÓMODA
+-----------------
+Si eres recién egresado - grado ya conferido, sin matrícula
+activa en ninguna parte - entonces tres de los cinco programas
+de este archivo están cerrados para ti, incluyendo las dos
+rutas de Mitacs y ELAP. Las tres exigen matrícula vigente.
+
+Eso significa que los dos programas en los que se concentró la
+investigación de videos (Mitacs y ELAP) son justamente los dos
+que menos probablemente puedas usar, y el programa que sí
+calza con un recién egresado (McCall MacBain) tiene un plazo
+dentro de tres semanas - siempre que caigas en el tramo de
+Canadá/EE.UU. Si estudiaste en Perú, ese tramo cerró el 19 de
+agosto.
+
+Averigua HOY en qué tramo de McCall MacBain estás. El tramo lo
+decide dónde estudiaste, no tu nacionalidad [X]. Esa sola
+pregunta define si tienes una postulación viva este ciclo o si
+estás planificando para 2028.
+
+
+================================================================
+3. EL PROCESO COMPLETO - de la postulación a la llegada
+================================================================
+
+Esta es la ruta de investigación guiada por supervisor (Mitacs
+GRA, estancias de investigación ELAP, contacto directo con
+laboratorios). El Mitacs GRI es la excepción: funciona por
+portal, eliges de una lista publicada de proyectos en lugar de
+conseguir un supervisor. Donde difieren, está marcado.
+
+Tiempo realista total: de 9 a 12 meses desde el primer correo
+hasta aterrizar en Canadá. [~]
+
+
+---- FASE 0: FILTRO DE ELEGIBILIDAD (una noche) ----
+
+Antes que nada, descarta los programas que no puedes usar. La
+mayor parte del esfuerzo desperdiciado muere en un requisito
+que el postulante pudo haber revisado el día uno.
+
+Los cuatro filtros que realmente descalifican gente:
+
+  1. Estado de matrícula. GRI exige matrícula de pregrado a
+     tiempo completo vigente [XX]. GRA exige matrícula como
+     estudiante de últimos ciclos de pregrado, posgrado o
+     posdoctorado [XX]. ELAP exige matrícula en una institución
+     de América Latina o el Caribe a la que regresarás [XX].
+     Un grado conferido sin matrícula activa falla los tres.
+
+  2. Elegibilidad a nivel de institución, no de país. Mitacs
+     publica INSTITUCIONES elegibles por país socio. Perú
+     aparece en la lista de países 2027 [X], pero tu
+     universidad específica también tiene que estar listada.
+     Este es el rechazo silencioso más común: la lista de
+     países la citan todos los blogs, la de instituciones no.
+
+  3. Ciclos restantes. Según se reporta, el GRI exige que te
+     queden de uno a tres ciclos al otoño de 2027 [X].
+     Egresar demasiado temprano te descalifica igual que
+     egresar demasiado tarde.
+
+  4. Qué tramo de plazo te toca. McCall MacBain tiene dos,
+     separados por cuatro semanas, y lo decide dónde
+     estudiaste [X].
+
+TIP: Anota estas cuatro respuestas antes de leer otra página
+de programa. Si no puedes responder el filtro 2 con la lista
+oficial, escríbele directamente a Mitacs y pregunta. Una
+respuesta de una línea vale más que una semana de suposiciones.
+
+
+---- FASE 1: SELECCIÓN DE OBJETIVOS (2-3 semanas) ----
+
+RUTA POR PORTAL (Mitacs GRI):
+  Navegas los proyectos publicados en globalink.mitacs.ca y
+  envías una lista corta. Requisito reportado: mínimo 3 y
+  máximo 10 proyectos, de al menos 3 provincias canadienses
+  distintas [X].
+
+  La restricción de provincias no es burocracia: obliga a la
+  dispersión geográfica para que el emparejamiento tenga
+  margen. No mandes diez proyectos de tres laboratorios de
+  Toronto.
+
+  TIP: Ordena tus preferencias con honestidad. Un proyecto que
+  rechazarías si te lo ofrecen es un cupo desperdiciado. [~]
+
+RUTA POR SUPERVISOR (GRA, investigación ELAP, contacto
+directo):
+  El laboratorio lo encuentras tú. Secuencia que funciona:
+
+  a. Parte de papers, no de rankings. Busca 3-4 papers
+     recientes que de verdad puedas leer y que te importen.
+     El autor de correspondencia es tu objetivo.
+  b. Verifica que siga en esa institución y siga activo: un
+     paper de 2023 no significa un laboratorio de 2026.
+  c. Revisa si la página del laboratorio dice explícitamente
+     que no recibe estudiantes, antes de escribir. Ignorar
+     ese aviso es un "no" inmediato.
+  d. Arma una lista de 15-20. Espera una tasa de respuesta
+     de 10-20% con correos en frío bien dirigidos. [~]
+
+  TIP: La coincidencia temática le gana al prestigio. Un
+  supervisor de una universidad de rango medio cuyo subcampo
+  calza exactamente con el tuyo dice que sí mucho más seguido
+  que un laboratorio famoso donde eres uno de 200 correos
+  idénticos. [~]
+
+
+---- FASE 2: EL CORREO AL SUPERVISOR (el cuello de botella) ----
+
+Aplica a GRA y ELAP. Sáltatelo si vas por el portal del GRI.
+
+Aquí es donde el proceso realmente se gana o se pierde. El
+Mitacs GRA no tiene portal abierto: sin un supervisor
+anfitrión comprometido no hay nada que enviar [XX]. Tu vía de
+entrada es una persona, no un formulario.
+
+Estructura que funciona [~]:
+
+  Asunto: concreto y específico. "Postulante a Mitacs Globalink
+  - [tu subcampo]" le gana a "Consulta sobre oportunidad de
+  investigación".
+
+  Párrafo 1 (2 oraciones): quién eres, qué estudias, cuándo
+  estás disponible.
+
+  Párrafo 2 (3-4 oraciones): el paper específico de esa persona
+  que leíste, y una idea concreta al respecto: una extensión,
+  una pregunta, un conjunto de datos donde podría aplicarse.
+  Este párrafo ES el correo completo. Todo lo demás es
+  empaque.
+
+  Párrafo 3 (2 oraciones): qué aportas, en concreto.
+  "Implementé X en PyTorch y lo puse en producción en Y" le
+  gana a "me apasiona la investigación".
+
+  Párrafo 4 (1 oración): el financiamiento. Menciona el nombre
+  del programa y que cubre la estancia sin costo para su
+  presupuesto de investigación. Esta es la oración que
+  convierte. Un supervisor que se entera de que el estudiante
+  llega ya financiado lee el resto del correo de otra manera.
+
+  Adjunto: un CV de una página. Nada más.
+
+  Total: menos de 200 palabras.
+
+TIPS:
+  - Envía de martes a jueves por la mañana en la zona horaria
+    DE ESA PERSONA. [~]
+  - Un solo seguimiento a los 10-14 días. Uno. Después sigue
+    adelante. [~]
+  - Nunca mandes en copia oculta masiva. Los académicos hablan
+    entre ellos y un correo genérico se nota desde el espacio.
+  - Si te responden "no tengo financiamiento", responde de
+    inmediato con los datos del programa. La mitad de esas
+    respuestas se revierten justo ahí. [~]
+
+
+---- FASE 3: DOCUMENTOS (2-4 semanas, se solapa con fase 2) ----
+
+Paquete estándar para postulaciones de investigación [~]:
+
+  - CV académico, 1-2 páginas. Investigación, publicaciones y
+    habilidades técnicas primero. Los trabajos no relacionados
+    al final o directamente fuera.
+  - Certificado de estudios oficial (transcript). Pedirlo toma
+    más de lo que crees: arranca la primera semana, no la
+    última.
+  - Carta de motivación / declaración de propósito.
+    Normalmente 500-1000 palabras.
+  - 2-3 cartas de recomendación. Dale a cada recomendante 3-4
+    semanas mínimo, más tu CV, la descripción del programa y
+    una lista de lo que hiciste con esa persona. Un
+    recomendante que tiene que reconstruir tu aporte escribe
+    una carta débil.
+  - Certificación de idioma. IELTS/TOEFL para inglés, a veces
+    TEF/TCF para instituciones francófonas de Quebec. Los
+    cupos de examen se agotan con semanas de anticipación. [~]
+  - Copia del pasaporte, vigente bastante después del fin de
+    la estancia.
+
+TIP: Arranca PRIMERO con el certificado de estudios y las
+cartas de recomendación, antes de escribir nada. Son los
+únicos elementos cuyo plazo no controlas tú. [~]
+
+TIP: La carta de motivación es donde la mayoría de
+postulaciones se apaga. El error típico es describir tu
+entusiasmo en vez de tu encaje. Escríbela de modo que el
+supervisor o el comité vea la coincidencia en las primeras
+tres oraciones. Si tu carta funcionaría sin cambios para otro
+laboratorio, es demasiado genérica. [~]
+
+
+---- FASE 4: ENVÍO ----
+
+GRI: envía por el portal Globalink antes del plazo. 16 de
+septiembre de 2026, 1:00 p.m. hora del Pacífico, para la
+cohorte 2027 [XX]. Ojo con la zona horaria: la 1:00 p.m. del
+Pacífico son las 3:00 p.m. en Lima, el mismo día.
+
+GRA: tu supervisor anfitrión o su oficina de posgrado lleva el
+envío [XX]. Pregúntale por el plazo interno apenas acepte: los
+plazos institucionales van semanas antes que cualquier plazo
+externo.
+
+ELAP: postula por el canal que exista - la oficina de
+relaciones internacionales de tu universidad, o la
+convocatoria propia de la institución canadiense
+anfitriona [XX]. Nada de lo que envíes directamente a Global
+Affairs Canada será leído bajo el modelo 2026-27.
+
+McCall MacBain: postulas tú mismo en
+apply.mccallmacbainscholars.org [XX]. Por separado, tienes que
+cumplir los requisitos de admisión de McGill para una maestría
+o programa profesional elegible [XX]. Dos procesos, ambos
+obligatorios.
+
+TIP: Envía 48 horas antes. Los portales se saturan el día del
+plazo y ningún programa asume como suyo un error de carga. [~]
+
+
+---- FASE 5: ESPERA Y EMPAREJAMIENTO (2-5 meses) ----
+
+En el GRI, una postulación de septiembre alimenta una estancia
+del verano siguiente: unos 9 meses de diferencia [~]. Los
+resultados y el emparejamiento caen en el medio.
+
+Lo que pasa realmente en esa ventana [~]:
+  - Se filtran las postulaciones por elegibilidad. Los que
+    fallan un requisito se cortan ahí, sin revisión.
+  - Las que sobreviven van a los supervisores de los proyectos
+    que ordenaste.
+  - Un supervisor manifiesta interés y se hace el
+    emparejamiento.
+  - Sale una carta de oferta o de adjudicación, que es donde
+    se confirma el monto exacto: Mitacs no publica una cifra
+    fija de estipendio, la carta la indica [X].
+
+TIP: El silencio en el mes tres es normal, no es un rechazo.
+No escribas a la oficina del programa a preguntar el estado.
+Sí mantén el vínculo con el supervisor si ya tienes uno: una
+nota corta con un paper relevante se agradece; un "¿alguna
+novedad?" no. [~]
+
+TIP: Postula a más de una cosa en la misma temporada. Estos
+plazos son lo bastante largos como para que una sola
+postulación sea una apuesta de 9 meses a un solo resultado. [~]
+
+
+---- FASE 6: ACEPTADO - LA FASE DE LOGÍSTICA ----
+
+Esta es la fase que cubre la entrevista de la ganadora de ELAP,
+y la fase que no pude extraerte. Trata todo lo de abajo como la
+lista de lo que hay que VERIFICAR contra ese video y contra la
+guía oficial, no como dato confirmado.
+
+MIGRACIONES [!!]
+  Una estancia corta de investigación en Canadá puede requerir
+  permiso de estudios, permiso de trabajo, o caer en una
+  exención, según la duración, si te pagan y si el trabajo es
+  académico. No pude verificar cuál aplica a una estancia
+  Mitacs de 12 semanas en 2027, y equivocarse acá es un error
+  de "no te dejan abordar", no un error de papeleo.
+
+  PREGÚNTALE DIRECTAMENTE AL PROGRAMA, por escrito, apenas
+  te acepten. Después confirma contra IRCC. No tomes guía
+  migratoria de un video de YouTube de 2022: esto es lo más
+  probable de todo el archivo que haya cambiado.
+
+  Sea cual sea la respuesta, los tiempos de trámite para
+  postulantes peruanos pueden ser de meses. Empieza el día que
+  llegue la oferta.
+
+FLUJO DE DINERO [~]
+  El desfase que agarra desprevenida a la gente: los vuelos y
+  el primer mes de alquiler se pagan ANTES de que llegue el
+  primer estipendio. Mitacs financia pasajes, alojamiento,
+  comida e imprevistos [X], pero el momento del reembolso es
+  una pregunta distinta a la de la cobertura.
+
+  Pregunta explícitamente: ¿me reservan el pasaje, me lo
+  reembolsan después de volar, o me lo adelantan? La respuesta
+  define si necesitas entre CAD 2,000 y 3,000 de dinero puente.
+
+  El apoyo para gastos de matrícula, según se reporta, tiene un
+  tope de CAD 300 [X]. Lo que pase de ahí corre por tu cuenta.
+
+ALOJAMIENTO [~]
+  El mercado de vivienda estudiantil en Toronto, Vancouver y
+  Montreal está apretado, y una estancia de verano cae en la
+  peor ventana posible.
+
+  - Pregunta PRIMERO a la oficina internacional de la
+    universidad anfitriona por residencia de verano en campus.
+    Suele ser más barata, amoblada, y no exige historial
+    crediticio local.
+  - Fuera del campus, los arrendadores pueden pedirte
+    historial crediticio canadiense o garantes que no tienes.
+    Las residencias estudiantiles y la vivienda vinculada a la
+    universidad esquivan ese problema.
+  - Según se reporta, Mitacs asigna mentores estudiantiles en
+    campus [X]. Úsalos: un mentor que ya vive ahí vale más que
+    una semana investigando avisos.
+  - Nunca transfieras un depósito por un lugar que nadie
+    verificó físicamente.
+
+SEGURO [X]
+  Según se reporta, Mitacs cubre seguro de salud de emergencia
+  durante la estancia. Confirma qué excluye: cobertura de
+  emergencia no es lo mismo que cobertura de salud.
+
+TIP: Lo más valioso de esa entrevista de ELAP probablemente
+sea la secuencia de vuelos y alojamiento: qué reservó, cuándo,
+y qué hubiera hecho distinto. Extráelo con el prompt de la
+sección 7 y pega el resultado debajo de esta sección. [~]
+
+
+---- FASE 7: LLEGADA Y PRIMERAS SEMANAS ----
+
+  - Pídele a tu supervisor un objetivo de primera semana ANTES
+    de volar. Llegar con una primera tarea definida comprime
+    el periodo inútil de orientación de tres semanas a tres
+    días. [~]
+  - Abre cuenta bancaria y plan de celular en la primera
+    semana. Varios desembolsos de estipendio necesitan una
+    cuenta canadiense. [~]
+  - Conoce a los estudiantes de posgrado del laboratorio, no
+    solo al investigador principal. Ellos definen si haces
+    trabajo real o trabajo de relleno. [~]
+
+
+---- FASE 8: CONVERTIRLO EN ALGO MÁS ----
+
+Una estancia de 12 semanas es corta. Lo que la hace
+capitalizar [~]:
+
+  - Pregunta en la semana dos cómo se vería un aporte
+    publicable. No esperes a la semana diez.
+  - Arranca la conversación de la carta de recomendación en la
+    semana ocho, mientras el trabajo está fresco y todavía
+    estás en el edificio.
+  - La ruta Mitacs Globalink está explícitamente diseñada para
+    alimentar estudios de posgrado en Canadá. Si quieres
+    volver para una maestría, dilo antes de irte. Un supervisor
+    que sabe que quieres volver escribe una carta distinta a
+    uno que cree que ya terminaste.
+
+
+================================================================
+4. FICHAS POR PROGRAMA
+================================================================
+
+----------------------------------------------------------------
+4.1  MCCALL MACBAIN SCHOLARSHIP
+----------------------------------------------------------------
+Financia   : McCall MacBain Foundation con McGill University [XX]
+Nivel      : Maestría o programa profesional en McGill [XX]
+Ruta       : Postulas directo. Sin nominación, sin
+             supervisor. [XX]
+
+VALOR
+  Matrícula y tasas universitarias completas por la duración
+  normal del programa, más un estipendio de manutención de
+  CAD 2,300 mensuales durante los ciclos académicos, más un
+  apoyo único de reubicación a Montreal. [XX]
+
+PLAZOS
+  Postulaciones abiertas desde el 1 de junio de 2026 para la
+  cohorte 2027. [X]
+  19 ago 2026, 4pm ET - universidades fuera de
+                        Canadá/EE.UU.                  [XX]
+  23 sep 2026, 4pm ET - universidades de Canadá/EE.UU.
+                        y canadienses en el exterior   [XX]
+  El tramo lo decide principalmente dónde estudias o
+  estudiaste, no tu nacionalidad. [X]
+
+ELEGIBILIDAD
+  Cumplir UNA de estas:
+   - estar en camino de terminar tu primer bachillerato antes
+     de agosto de 2027
+   - haber obtenido tu primer bachillerato en enero de 2021 o
+     después
+   - haberlo obtenido hace más de cinco años Y tener 30 años o
+     menos al 1 de enero de 2026
+  ADEMÁS: cumplir por separado los requisitos de admisión de
+  McGill para una maestría o programa profesional elegible,
+  incluidos los requisitos de idioma. [XX]
+
+ENCAJE SEGÚN TU SITUACIÓN
+  Pregrado 2+ años  : NO       - muy temprano
+  Último año        : SÍ       - el perfil objetivo
+  Recién egresado   : SÍ       - si el grado es de ene 2021+
+  En posgrado       : QUIZÁS   - financia un grado NUEVO en
+                                 McGill
+
+OFICIAL : https://mccallmacbainscholars.org/apply/
+VIDEOS  : ninguno verificado
+
+----------------------------------------------------------------
+4.2  MITACS GLOBALINK RESEARCH INTERNSHIP (GRI)
+----------------------------------------------------------------
+Financia   : Mitacs [XX]
+Nivel      : Pregrado, o pregrado/maestría combinado [XX]
+Duración   : 12 semanas [XX]
+Ruta       : Postulas directo en globalink.mitacs.ca [XX]
+
+PLAZO
+  16 de septiembre de 2026, 1:00 p.m. hora del Pacífico,
+  cohorte 2027 [XX]
+
+VALOR
+  No hay una cifra fija publicada de estipendio. Mitacs
+  financia pasajes aéreos, alojamiento, comida e imprevistos,
+  gastos de matrícula con tope de CAD 300, y seguro de salud
+  de emergencia. El monto exacto se confirma en la carta de
+  adjudicación. [X]
+
+ELEGIBILIDAD
+  - Mínimo 18 años, matriculado a tiempo completo en un
+    programa elegible de pregrado o pregrado/maestría
+    combinado [XX]
+  - Normalmente dos años de pregrado completados, o cursando
+    segundo año, sujeto a condiciones por país [XX]
+  - Reportado: de uno a tres ciclos restantes al otoño de
+    2027 [X]
+  - Postular a 3-10 proyectos de al menos 3 provincias [X]
+
+PAÍSES ELEGIBLES (reportado, 2027) [X]
+  Austria, Brasil, Chile, China, Colombia, Finlandia, Francia,
+  Alemania, Hong Kong, India, Jordania, México, Pakistán,
+  PERÚ, Singapur, Corea del Sur, Taiwán, Tailandia, Túnez,
+  Ucrania, Reino Unido, Estados Unidos.
+
+  Perú está en la lista. Tu institución específica también
+  tiene que estar en la lista de instituciones elegibles de
+  Mitacs: que el país sea elegible no basta.
+
+OJO
+  Algunos países van por un socio nacional con reglas más
+  estrictas. El canal de India vía AICTE está restringido a
+  estudiantes de B.E./B.Tech. [XX]. No asumas que las reglas
+  generales aplican a tu país sin verificar.
+
+ENCAJE SEGÚN TU SITUACIÓN
+  Pregrado 2+ años  : SÍ      - el perfil objetivo
+  Último año        : QUIZÁS  - la regla de ciclos restantes
+                                puede eliminarte
+  Recién egresado   : NO      - exige matrícula vigente
+  En posgrado       : NO      - revisa el GRA
+
+OFICIAL : https://www.mitacs.ca/our-programs/globalink-research-internship/
+PORTAL  : https://globalink.mitacs.ca/
+
+VIDEOS (los tres confirmados como existentes; ninguno visto)
+  "How to apply for the internship? | MITACS GLOBALINK
+   RESEARCH INTERNSHIP | Application Timeline"
+  22 jun 2022 - inglés - pasante GRI en ÉTS Montreal
+  https://www.youtube.com/watch?v=3DZPRYGjN5M
+
+  "(APPLY NOW) FULLY FUNDED INTERNSHIP in CANADA | Mitacs
+   Globalink Research Internship 2023"
+  16 ago 2023 - inglés - recorrido completo de postulación
+  https://www.youtube.com/watch?v=BNLtRvG9LcM
+
+  "Journey to Mitacs | Suggestion from Mitacs Intern - 2022
+   for Globalink Internship"
+  30 ago 2022 - inglés - consejos de un pasante
+  https://www.youtube.com/watch?v=OBaPmcbxLpg
+
+  DESACTUALIZACIÓN: los tres son de los ciclos 2022-2023. Los
+  recorridos del portal y los cronogramas que muestran están
+  vencidos. Úsalos para el contexto y los consejos de
+  entrevista/emparejamiento, no para fechas.
+
+----------------------------------------------------------------
+4.3  MITACS GLOBALINK RESEARCH AWARD (GRA)
+----------------------------------------------------------------
+Financia   : Mitacs [XX]
+Nivel      : Últimos ciclos de pregrado, posgrado,
+             posdoctorado [XX]
+Valor      : CAD 6,000 para pregrado avanzado y posgrado [X]
+Duración   : Un proyecto de 12-48 semanas, o dos de
+             12-24 semanas [X]
+Dirección  : Hacia Canadá O desde Canadá hacia afuera [XX]
+Plazo      : Ninguno público - lo fija la institución
+             canadiense anfitriona [XX]
+Supervisor : OBLIGATORIO antes de postular. Ese es el
+             filtro. [XX]
+
+POR QUÉ IMPORTA
+  Este es el equivalente de posgrado del GRI, y la mayoría del
+  contenido de creadores confunde los dos. Si ya pasaste el
+  pregrado, los consejos sobre el GRI no te sirven: no hay
+  portal donde postular ni plazo que cumplir. Hay un supervisor
+  a quien convencer.
+
+ENCAJE SEGÚN TU SITUACIÓN
+  Pregrado 2+ años  : NO      - pide pregrado avanzado o más
+  Último año        : QUIZÁS  - necesitas supervisor
+                                comprometido
+  Recién egresado   : NO      - exige matrícula vigente
+  En posgrado       : SÍ      - el perfil objetivo
+
+OFICIAL : https://www.mitacs.ca/our-programs/globalink-research-award/
+VIDEOS  : ninguno verificado. Casi todo el contenido de Mitacs
+          cubre el GRI y lo confunde con este. Ten cuidado.
+
+----------------------------------------------------------------
+4.4  EMERGING LEADERS IN THE AMERICAS PROGRAM (ELAP)
+----------------------------------------------------------------
+Financia   : Global Affairs Canada vía EduCanada [XX]
+Ruta       : Te selecciona la institución canadiense
+             anfitriona. NO existe postulación directa del
+             estudiante a Global Affairs Canada. [XX]
+
+VALOR [X]
+  CAD 8,200  - técnico, pregrado o posgrado, cuatro meses o
+               un ciclo académico
+  CAD 11,100 - posgrado, cinco a seis meses de investigación
+  Las instituciones anfitrionas están obligadas a exonerar
+  la matrícula por completo. [XX]
+
+  NOTA: circulaba una cifra de CAD 10,200 para el tramo alto.
+  El resultado de búsqueda arrojó 11,100. Ambas son de fuente
+  única. Verifica antes de armar presupuesto.
+
+REDISEÑO 2026-27 - lo importante
+  Las instituciones canadienses ahora son responsables de la
+  selección de estudiantes, un cambio respecto del proceso
+  anterior centrado en Global Affairs. [XX]
+  Las instituciones reciben hasta $150,000 por proyecto,
+  cubriendo becas más apoyo administrativo. [X]
+  Resultados comunicados a las instituciones canadienses en
+  mayo de 2026. [X]
+  Los proyectos deben terminar a más tardar el 30 de
+  septiembre de 2027. [XX]
+
+ELEGIBILIDAD
+  - Matriculado en una institución de educación superior de
+    América Latina o el Caribe, con compromiso de regresar a
+    ella después del intercambio [XX]
+  - Seleccionado por una institución canadiense que tenga un
+    proyecto ELAP financiado [XX]
+
+CÓMO ENTRAR DE VERDAD
+  1. Pregunta en la oficina de relaciones internacionales de
+     tu universidad con qué instituciones canadienses tienen
+     convenio ELAP. La vía más rápida, y la que más se salta
+     la gente.
+  2. Revisa directamente las páginas de ELAP de las
+     universidades canadienses que te interesan: muchas
+     publican sus propias convocatorias y plazos internos.
+  3. Lo que mandes a Global Affairs Canada no llega a ninguna
+     parte.
+
+ENCAJE SEGÚN TU SITUACIÓN
+  Pregrado 2+ años  : QUIZÁS  - necesitas un proyecto
+                                canadiense que te reciba
+  Último año        : QUIZÁS  - la matrícula debe durar más
+                                que el intercambio
+  Recién egresado   : NO      - se exige el anclaje de
+                                matrícula
+  En posgrado       : QUIZÁS  - tramo de monto más alto,
+                                mismo filtro
+
+OFICIAL : https://www.educanada.ca/scholarships-bourses/can/institutions/elap-pfla.aspx?lang=eng
+
+VIDEOS (los tres confirmados como existentes; ninguno visto)
+  "¿Quieres una Beca para Estudiar GRATIS en Canadá? | ELAP -
+   alojamiento, vuelos y más!"
+  5 ago 2025 - español - entrevista a una ganadora de ELAP
+  https://www.youtube.com/watch?v=fgQQn6ks6gQ
+  ** ESTE es el de alojamiento y vuelos que preguntaste. **
+
+  "Beca ELAP" (Short)
+  19 feb 2026 - español - becario llamado Diego
+  https://www.youtube.com/shorts/BdKTBsOFqMI
+
+  "OPORTUNIDADES ACADÉMICAS Y DE INVESTIGACIÓN EN CANADÁ -
+   BECAS ELAP"
+  8 jul 2025 - español - rutas académicas y de investigación
+  https://www.youtube.com/watch?v=m96fV4pIAgI
+
+  DESACTUALIZACIÓN: todos son anteriores al rediseño 2026-27 o
+  lo cruzan. Describen el proceso VIEJO, con Global Affairs
+  Canada en el centro. Su contenido de alojamiento, vuelos y
+  experiencia vivida sigue sirviendo. Su descripción de CÓMO
+  FUNCIONA LA SELECCIÓN ahora está equivocada.
+
+  OTROS VIDEOS DE ELAP ENCONTRADOS (existen, sin evaluar):
+  https://www.youtube.com/watch?v=gVkIrvaCo4Y  (egresado UTB)
+  https://www.youtube.com/watch?v=VkO-anCorww  (tips de
+                                                postulación)
+  https://www.youtube.com/watch?v=24ECe83OfNs  (2025 paso a
+                                                paso)
+  https://www.youtube.com/watch?v=wjg4HbHG9tk  (charla
+                                                informativa)
+  https://www.youtube.com/watch?v=Kx6eV8UPY9k  (qué se siente
+                                                ganar)
+
+----------------------------------------------------------------
+4.5  PRONABEC - BECA GENERACIÓN BICENTENARIO
+----------------------------------------------------------------
+Financia   : PRONABEC, Gobierno del Perú [XX]
+Nivel      : Maestría o doctorado, presencial, en el
+             extranjero [XX]
+Ruta       : Postulas directo a PRONABEC durante una
+             convocatoria abierta [XX]
+
+ELEGIBILIDAD [X]
+  - Peruano con grado de bachiller, título profesional o
+    título profesional técnico conferido
+  - La institución debe estar entre las primeras 400 a nivel
+    internacional
+  - Sin límite de edad
+  - Con evaluación socioeconómica: alto rendimiento académico
+    combinado con insuficientes recursos económicos
+
+PROGRAMAS RELACIONADOS [XX]
+  Beca Presidente de la República - matrícula, manutención,
+    seguro médico, pasajes y gastos de instalación
+  Beca Alianza del Pacífico
+  Beca OEA
+  Beca Posgrado Brasil
+
+PLAZOS
+  Varían según convocatoria y no son fijos año a año.
+  Cualquier fecha que leas en un blog agregador no vale nada:
+  revisa pronabec.gob.pe. [XX]
+
+ENCAJE SEGÚN TU SITUACIÓN
+  Pregrado 2+ años  : NO      - exige bachiller conferido
+  Último año        : QUIZÁS  - solo cuando el grado esté
+                                efectivamente conferido
+  Recién egresado   : SÍ      - hecho exactamente para esto
+  En posgrado       : QUIZÁS  - verifica si estudiar ya te
+                                descalifica
+
+NOTA ESTRATÉGICA
+  Es el único programa de este archivo con evaluación
+  socioeconómica, y el único donde ser peruano es una ventaja
+  y no un dato neutro. Además se combina distinto: PRONABEC te
+  financia para ir a cualquier institución del top 400, así
+  que no compite con McCall MacBain, es una fuente alternativa
+  de financiamiento para un destino parecido.
+
+OFICIAL  : https://www.pronabec.gob.pe/beca-generacion-bicentenario/
+GENERAL  : https://www.pronabec.gob.pe/becas-de-cooperacion-internacional/
+VIDEOS   : ninguno verificado
+
+
+================================================================
+5. MATRIZ DE ENCAJE - todos los programas, todas las situaciones
+================================================================
+
+                         PRE2+  ÚLTIMO  EGRESADO  POSGR
+  McCall MacBain          NO     SÍ      SÍ        QUIZÁS
+  Mitacs GRI              SÍ     QUIZÁS  NO        NO
+  Mitacs GRA              NO     QUIZÁS  NO        SÍ
+  ELAP                    QUIZÁS QUIZÁS  NO        QUIZÁS
+  PRONABEC Bicentenario   NO     QUIZÁS  SÍ        QUIZÁS
+
+  PRE2+    = pregrado matriculado, 2+ años completados
+  ÚLTIMO   = último año de pregrado
+  EGRESADO = grado conferido, sin matrícula vigente
+  POSGR    = matriculado en maestría o doctorado
+
+
+================================================================
+6. ÍNDICE DE VIDEOS VERIFICADOS
+================================================================
+
+Los seis IDs de abajo se confirmaron como existentes en el
+índice de búsqueda, con los títulos y fechas que se muestran.
+Ninguno fue visto: youtube.com estuvo bloqueado a nivel de red.
+
+MITACS
+  https://www.youtube.com/watch?v=3DZPRYGjN5M
+    "How to apply for the internship? | MITACS GLOBALINK
+     RESEARCH INTERNSHIP | Application Timeline"
+    22 jun 2022 - inglés - pasante GRI en ÉTS Montreal
+
+  https://www.youtube.com/watch?v=BNLtRvG9LcM
+    "(APPLY NOW) FULLY FUNDED INTERNSHIP in CANADA | Mitacs
+     Globalink Research Internship 2023"
+    16 ago 2023 - inglés
+
+  https://www.youtube.com/watch?v=OBaPmcbxLpg
+    "Journey to Mitacs | Suggestion from Mitacs Intern - 2022
+     for Globalink Internship"
+    30 ago 2022 - inglés
+
+ELAP
+  https://www.youtube.com/watch?v=fgQQn6ks6gQ
+    "¿Quieres una Beca para Estudiar GRATIS en Canadá? | ELAP -
+     alojamiento, vuelos y más!"
+    5 ago 2025 - español - EL DE ALOJAMIENTO Y VUELOS
+
+  https://www.youtube.com/shorts/BdKTBsOFqMI
+    "Beca ELAP"
+    19 feb 2026 - español - Short, becario llamado Diego
+
+  https://www.youtube.com/watch?v=m96fV4pIAgI
+    "OPORTUNIDADES ACADÉMICAS Y DE INVESTIGACIÓN EN CANADÁ -
+     BECAS ELAP"
+    8 jul 2025 - español
+
+TAMBIÉN ENCONTRADOS (existen, relevancia sin evaluar)
+  https://www.youtube.com/watch?v=psxlBsPhKmg
+    "Mitacs Globalink 2027: Fully Funded Research in Canada as
+     a Bachelor's Student" - el único video del ciclo 2027
+  https://www.youtube.com/watch?v=dw3_X1zixls
+    "2025 GLOBALINK RESEARCH AWARD: Quantum stream + how to
+     apply" - cubre el GRA, que ningún otro cubre
+  https://www.youtube.com/watch?v=AnZqv2s5zE0
+  https://www.youtube.com/watch?v=iYX4hRKVMAM
+    "Mitacs Globalink Research Award Info Session"
+  https://www.youtube.com/shorts/h1FfdFenO_Y
+  https://www.youtube.com/playlist?list=PLK2BJtrjoQpYnIFliBpnu2z_GaWaLMmeN
+    Playlist oficial de Mitacs Globalink
+
+  De estos, psxlBsPhKmg e iYX4hRKVMAM son los dos que más
+  valen tu tiempo: uno es el único contenido del ciclo 2027
+  que apareció, el otro cubre el GRA que ningún otro video
+  aquí cubre.
+
+
+================================================================
+7. PROMPT DE EXTRACCIÓN
+================================================================
+
+Pega esto en una conversación nueva junto con el enlace o el
+archivo del video.
+
+---INICIO DEL PROMPT---
+Transcribe este video completo y luego reestructura la
+transcripción en un informe factual. Entrega dos secciones.
+
+Primero, una transcripción textual con etiquetas de hablante y
+marcas de tiempo aproximadas cada 30 segundos.
+
+Segundo, una tabla de extracción con estas columnas: nombre del
+programa, entidad financiadora, quién es elegible, monto en
+CAD, duración, plazo mencionado, si el postulante postula
+directo o necesita ser nominado, si se requiere supervisor
+anfitrión previo, y documentos requeridos.
+
+Extrae únicamente lo que la persona dice de forma explícita.
+Para cualquier cosa implícita pero no dicha, marca "no
+mencionado" en lugar de inferirlo.
+
+Al final, lista cada fecha, cada monto y cada URL mencionada, y
+señala qué afirmaciones podrían estar desactualizadas
+considerando el año de publicación del video.
+
+No agregues consejos ni contexto de tu propio conocimiento;
+esta es una tarea de extracción.
+---FIN DEL PROMPT---
+
+PARA EL VIDEO DE ALOJAMIENTO Y VUELOS, agrega esto:
+
+---INICIO DEL ANEXO---
+Adicionalmente, extrae una sección de logística que cubra: cómo
+consiguió alojamiento y con cuánta anticipación, cuánto pagó,
+si los vuelos se los reservaron o se los reembolsaron, cuánto
+tardó el reembolso, qué tuvo que pagar de su bolsillo antes de
+que llegara cualquier financiamiento, qué visa o permiso
+necesitó y cuánto demoró, y cualquier cosa que diga que haría
+distinto. Cita textualmente donde se pueda. Marca como "no
+mencionado" lo que no aparezca.
+---FIN DEL ANEXO---
+
+POR QUÉ importa la línea de "no agregues contexto": si mezclas
+seis videos en un solo conjunto de datos, quieres las
+inferencias del modelo fuera de la capa de extracción, para que
+las contradicciones entre fuentes queden visibles en vez de
+suavizarse en silencio. Tú las reconcilias después.
+
+
+================================================================
+8. BÚSQUEDAS PARA INSTAGRAM Y TIKTOK
+================================================================
+
+Ninguna de las dos plataformas está bien indexada por búsqueda
+web. Esto son cadenas de búsqueda, NO enlaces verificados.
+Nada de lo de abajo se confirmó que exista.
+
+TIKTOK
+  mitacs globalink
+  #mitacs
+  beca ELAP Canadá
+  #becaelap
+  estudiar en Canadá beca
+  #becascanada
+  McCall MacBain scholarship
+  PRONABEC beca posgrado extranjero
+
+INSTAGRAM - cuentas oficiales por revisar
+  @mitacs_canada
+  @educanada
+  @pronabec
+  @mccallmacbain
+
+  Usuarios sin verificar. Confirma que cada uno exista antes de
+  confiar: las cuentas de suplantación son comunes en el mundo
+  de las becas, y así es como la gente pierde dinero pagando
+  "cuotas de postulación" a programas que no cobran cuotas de
+  postulación.
+
+
+================================================================
+9. ACCIONES INMEDIATAS
+================================================================
+
+  [ ] Determina en qué tramo de plazo de McCall MacBain estás.
+      Lo decide dónde estudiaste, no tu nacionalidad. Son los
+      10 minutos de mayor valor de todo este archivo.
+
+  [ ] Si es el tramo Canadá/EE.UU.: 23 de septiembre de 2026,
+      4pm ET. Confirma la fecha hoy en el sitio oficial.
+
+  [ ] Si sigues matriculado en pregrado: verifica si tu
+      institución está en la lista de instituciones elegibles
+      de Mitacs para Perú, y luego decide sobre el plazo del
+      16 de septiembre.
+
+  [ ] Mira fgQQn6ks6gQ con el prompt de la sección 7 y pega el
+      resultado de logística debajo de la sección 3, fase 6.
+
+  [ ] Mira psxlBsPhKmg: el único video del ciclo 2027 que
+      apareció.
+
+  [ ] Revisa pronabec.gob.pe para el calendario de
+      convocatorias vigente. Ninguna fecha de agregador es
+      confiable acá.
+
+  [ ] Verifica el monto del tramo alto de ELAP. Circulan dos
+      cifras: CAD 10,200 y CAD 11,100.
+
+
+================================================================
+10. CONFLICTOS CON LA GUÍA index.html DE ESTE REPO
+================================================================
+
+El repositorio ya contiene una guía (index.html) compilada en la
+misma fecha, con cobertura más amplia de programas canadienses.
+En varios puntos sus datos NO coinciden con los de este dosier.
+Ninguna de las dos fuentes se leyó de un sitio oficial, así que
+no se resuelve aquí cuál gana. Se documentan para que confirmes
+tú:
+
+CONFLICTO 1 - Montos de ELAP
+  index.html  : CAD 8,600 (4 meses) / CAD 12,400 (posgrado 5-6 m)
+  este dosier : CAD 8,200 (4 meses) / CAD 11,100 (posgrado 5-6 m)
+  -> Difieren en los dos tramos. Verifica en educanada.ca antes
+     de presupuestar nada.
+
+CONFLICTO 2 - De dónde salió la cifra de CAD 10,200
+  Circulaba como "el tramo alto de ELAP". La guía index.html la
+  ubica en Study in Canada Scholarships (SICS), un programa
+  distinto: CAD 10,200 por 4 meses y CAD 14,000 por 5-6 meses de
+  posgrado.
+  -> Explicación más probable: se estaban mezclando dos
+     programas. Trata 10,200 como cifra de SICS, no de ELAP.
+
+CONFLICTO 3 - McCall MacBain, tramo faltante
+  index.html marca el programa como "Cerrada", citando solo el
+  plazo internacional del 19 de agosto de 2026.
+  Este dosier encontró DOS tramos: 19 de agosto para
+  universidades fuera de Canadá/EE.UU., y 23 de septiembre de
+  2026, 4:00 p.m. ET, para estudiantes y egresados de
+  universidades de Canadá/EE.UU. y canadienses en el exterior.
+  -> Si caes en el segundo tramo, el ciclo 2027 puede seguir
+     abierto. La guía no lo contempla. Verifícalo tú mismo, es
+     la diferencia entre postular este año o esperar a 2028.
+
+DATO QUE index.html TIENE Y ESTE DOSIER NO
+  Instituciones peruanas elegibles para Mitacs GRI 2027: según
+  esa guía, solo DOS - Universidad Científica del Sur y
+  Universidad Nacional Agraria La Molina.
+  -> Esto responde el "Filtro 2" de la fase 0 de este dosier,
+     que quedó abierto por no poder acceder a la lista oficial
+     de Mitacs. Si tu universidad no es una de esas dos, el
+     Mitacs GRI queda descartado sin importar todo lo demás.
+     Confírmalo igual: es el dato de mayor consecuencia de
+     ambos documentos.
+
+OTROS DATOS SOLO EN index.html
+  - Study in Canada Scholarships (SICS), CGRS-D (CAD 40,000/año
+    hasta 3 años), Lester B. Pearson (U of T), Karen McKellin
+    ILOT (UBC), Canada Impact+ Research Training Awards.
+  - PROCIENCIA Pasantías en CTI: hasta S/ 35,000, instrumento
+    peruano para estancias de 15 a 180 días. Convocatoria 2026
+    cerrada el 10 de junio; próxima probable a inicios de 2027.
+  - Mitacs GRA: no se puede realizar en un país del que tengas
+    ciudadanía; posdoctorado hasta 5 años desde el PhD.
+  - Mitacs GRI: pasaporte con vigencia esperada hasta enero
+    de 2028.
+  - McCall MacBain: hasta 30 becas (20 canadienses, 10
+    internacionales) más alrededor de 100 premios de ingreso.
+
+QUÉ APORTA ESTE DOSIER QUE NO ESTÁ EN index.html
+  - PRONABEC Beca Generación Bicentenario como ruta principal
+    de posgrado (index.html la menciona solo como recurso).
+  - El segundo tramo de plazo de McCall MacBain.
+  - El proceso completo de 8 fases, incluida la logística de
+    llegada.
+  - La matriz de encaje por situación académica.
+  - Marcadores de confianza por afirmación.
+
+
+================================================================
+11. NOTAS SOBRE LAS FUENTES
+================================================================
+
+Compilado el 7 de septiembre de 2026 a partir de resúmenes de
+resultados de búsqueda web.
+
+Los accesos directos a lo siguiente fueron BLOQUEADOS por
+política de red y no se pudieron leer:
+  www.mitacs.ca
+  www.educanada.ca
+  www.youtube.com  (incluido el endpoint de metadatos oEmbed)
+
+La existencia de los videos, sus títulos y fechas se
+confirmaron únicamente vía el índice de búsqueda. Ningún video
+fue visto.
+
+En varios datos aparecieron agregadores secundarios (blogs de
+becas, páginas universitarias). Donde dos resultados
+independientes coincidieron, la afirmación va marcada [XX].
+Donde solo un resultado la traía, [X]. Ninguna de las dos
+marcas la vuelve oficial.
+
+Trata este archivo como un mapa de dónde buscar y qué
+preguntar, no como fuente de registro. Cada fecha y cada monto
+necesita un clic de confirmación antes de decidir nada.
+
+================================================================
+FIN
+================================================================

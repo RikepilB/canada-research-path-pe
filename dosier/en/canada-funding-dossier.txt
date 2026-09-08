@@ -1,0 +1,884 @@
+================================================================
+CANADA RESEARCH FUNDING - FULL DOSSIER
+Programs, eligibility, application flow, verified videos
+Compiled 7 September 2026
+================================================================
+
+HOW TO READ THIS FILE
+---------------------
+Confidence markers appear on every factual claim:
+
+  [XX] cross-checked - two independent search results agreed
+  [X ] single source - one search summary only; a lead, not a fact
+  [~ ] general practice - process knowledge, not from a source
+       document for these programs specifically
+  [!!] could not verify - stated here only so you know it exists
+
+NOTHING in this file was read from an official website. Every
+official domain (mitacs.ca, educanada.ca, mccallmacbainscholars.org,
+pronabec.gob.pe) and youtube.com was blocked by network policy in
+the environment that compiled this. Facts come from search-result
+summaries. Confirm every date and dollar figure on the official
+page before acting.
+
+
+================================================================
+1. WHAT I COULD NOT GET FOR YOU
+================================================================
+
+You asked specifically for the texture from the ELAP winner
+interview - housing, flights, what it was actually like.
+
+I could not watch it. YouTube was blocked at the network layer,
+through the shell, through the fetch tool, and through the
+oEmbed endpoint. What I confirmed is that the video exists,
+its title, and its upload date, via the search index only.
+
+So: no housing details, no flight logistics, no quotes. Those
+would be fabricated if I wrote them, and a fabricated logistics
+detail in a scholarship plan is the kind of error that costs
+money.
+
+The fix is in section 7. Open the video, feed it to a model
+with the extraction prompt, and you get the real answer in about
+two minutes.
+
+
+================================================================
+2. DEADLINE BOARD - read this first
+================================================================
+
+  MITACS GLOBALINK RESEARCH INTERNSHIP (GRI)
+  16 September 2026, 1:00 p.m. Pacific            [XX]
+  -> NINE DAYS from compile date.
+  -> Undergraduates only.
+
+  MCCALL MACBAIN - tier for Canadian/US universities
+  and Canadians abroad
+  23 September 2026, 4:00 p.m. Eastern            [XX]
+  -> SIXTEEN DAYS from compile date.
+
+  MCCALL MACBAIN - tier for everyone else
+  (universities outside Canada and the US)
+  19 August 2026, 4:00 p.m. Eastern               [XX]
+  -> ALREADY PASSED.
+
+  MITACS GLOBALINK RESEARCH AWARD (GRA)
+  No public deadline - set by the Canadian host
+  institution                                     [XX]
+
+  ELAP
+  No central student deadline - set by the Canadian
+  host institution that holds the funded project   [XX]
+
+  PRONABEC BECA GENERACION BICENTENARIO
+  Varies by convocatoria; not fixed year to year   [XX]
+
+
+THE UNCOMFORTABLE PART
+----------------------
+If you are a new graduate - degree conferred, not currently
+enrolled anywhere - then three of the five programs here are
+closed to you, including both Mitacs routes and ELAP. All three
+require active enrolment.
+
+That means the two programs the video research centred on
+(Mitacs and ELAP) are the two you are least likely to be able
+to use, and the program that actually fits a new grad
+(McCall MacBain) has a deadline inside three weeks - if you
+fall in the Canadian/US tier. If you studied in Peru, that
+tier closed on 19 August.
+
+Check which McCall MacBain tier you are in TODAY. The tier is
+decided by where you studied, not your citizenship [X]. That
+single question decides whether you have a live application
+this cycle or are planning for 2028.
+
+
+================================================================
+3. THE FLOW - applying to a research program end to end
+================================================================
+
+This is the supervisor-driven research route (Mitacs GRA, ELAP
+research placements, most direct lab outreach). The Mitacs GRI
+is the exception - it is portal-driven and you pick from a
+posted project list rather than courting a supervisor. Where
+they diverge is marked.
+
+Total realistic lead time: 9 to 12 months from first email to
+landing in Canada. [~]
+
+
+---- PHASE 0: ELIGIBILITY TRIAGE (1 evening) ----
+
+Before anything else, kill the programs you cannot use. Most
+wasted application effort dies at a gate the applicant could
+have checked on day one.
+
+The four gates that actually disqualify people:
+
+  1. Enrolment status. GRI needs current full-time undergrad
+     enrolment [XX]. GRA needs senior-undergrad, grad or
+     postdoc enrolment [XX]. ELAP needs enrolment at a Latin
+     American or Caribbean institution you will return to [XX].
+     A conferred degree with no current enrolment fails all
+     three.
+
+  2. Institution-level eligibility, not country-level. Mitacs
+     publishes eligible INSTITUTIONS per partner country. Peru
+     appears on the 2027 country list [X], but your specific
+     university must also be listed. This is the most common
+     silent rejection - the country list gets quoted in blog
+     posts, the institution list does not.
+
+  3. Semesters remaining. GRI reportedly requires one to three
+     semesters still remaining as of fall 2027 [X]. Graduating
+     too early disqualifies you as surely as graduating too
+     late.
+
+  4. Which deadline tier. McCall MacBain has two, four weeks
+     apart, decided by where you studied [X].
+
+TIP: Write these four answers down before you read another
+program page. If you cannot answer gate 2 from the official
+list, email the program directly and ask. A one-line answer
+from Mitacs beats a week of guessing.
+
+
+---- PHASE 1: TARGET SELECTION (2-3 weeks) ----
+
+PORTAL ROUTE (Mitacs GRI):
+  You browse posted projects on globalink.mitacs.ca and submit
+  a shortlist. Reported requirement: at least 3 and no more
+  than 10 projects, drawn from at least 3 different Canadian
+  provinces [X].
+
+  The province constraint is not bureaucratic noise - it forces
+  geographic spread so the matching algorithm has room. Do not
+  submit ten projects at three Toronto labs.
+
+  TIP: Rank honestly. A project you would decline if offered is
+  a slot you wasted. [~]
+
+SUPERVISOR ROUTE (GRA, ELAP research, direct outreach):
+  You find the lab yourself. Sequence that works:
+
+  a. Start from papers, not from university rankings. Find 3-4
+     recent papers you can actually read and care about. The
+     corresponding author is your target.
+  b. Check they are still at that institution and still active
+     - a 2023 paper does not mean a 2026 lab.
+  c. Check the lab page for an explicit "not taking students"
+     notice before you write. Ignoring one is an instant no.
+  d. Build a list of 15-20. Expect a reply rate around 10-20%
+     for a cold, well-targeted email. [~]
+
+  TIP: Overlap beats prestige. A supervisor at a mid-ranked
+  university whose exact subfield matches yours will say yes
+  far more often than a famous lab where you are one of 200
+  identical emails. [~]
+
+
+---- PHASE 2: THE SUPERVISOR EMAIL (the real bottleneck) ----
+
+Applies to GRA and ELAP. Skip if you are on the GRI portal
+route.
+
+This is where the process actually succeeds or fails. The
+Mitacs GRA has no open portal - without a committed host
+supervisor there is nothing to submit [XX]. Your route in is
+a person, not a form.
+
+Structure that works [~]:
+
+  Subject: concrete and specific. "Prospective Mitacs Globalink
+  intern - [your subfield]" beats "Research opportunity
+  inquiry".
+
+  Paragraph 1 (2 sentences): who you are, what you study, when
+  you are available.
+
+  Paragraph 2 (3-4 sentences): the specific paper of theirs you
+  read, and one concrete thought about it - an extension, a
+  question, a dataset it could be applied to. This paragraph is
+  the entire email. Everything else is packaging.
+
+  Paragraph 3 (2 sentences): what you bring. Be concrete -
+  "I have implemented X in PyTorch and shipped Y" beats
+  "I am passionate about research".
+
+  Paragraph 4 (1 sentence): the funding. Say the program name
+  and that it funds the placement at no cost to their grant.
+  This is the sentence that converts. A supervisor who learns
+  the student arrives pre-funded reads the rest of the email
+  differently.
+
+  Attach: a one-page CV. Nothing else.
+
+  Total: under 200 words.
+
+TIPS:
+  - Send Tuesday to Thursday morning in THEIR timezone. [~]
+  - One follow-up after 10-14 days. One. Then move on. [~]
+  - Do not mass-BCC. Academics talk, and a generic email is
+    visible from orbit.
+  - If they say "I have no funding", reply immediately with
+    the program details. Half of these reversals happen right
+    there. [~]
+
+
+---- PHASE 3: DOCUMENTS (2-4 weeks, overlaps phase 2) ----
+
+Standard set for research funding applications [~]:
+
+  - Academic CV, 1-2 pages. Research, publications, technical
+    skills first. Retail jobs last or absent.
+  - Official transcript. Ordering this takes longer than you
+    think - start in week one, not the week before.
+  - Statement of purpose / research statement. Usually
+    500-1000 words.
+  - 2-3 reference letters. Give referees 3-4 weeks minimum,
+    plus your CV, the program description, and a bullet list
+    of what you did with them. A referee who has to reconstruct
+    your contribution writes a weak letter.
+  - Language proof. IELTS/TOEFL for English, sometimes TEF/TCF
+    for French Quebec institutions. Test slots book out weeks
+    ahead. [~]
+  - Passport copy, valid well past the placement end date.
+
+TIP: The statement of purpose is where most applications go
+flat. The failure mode is describing your enthusiasm instead
+of your fit. Write it so the specific supervisor or committee
+sees the overlap in the first three sentences. If your SOP
+would work unchanged for a different lab, it is too generic. [~]
+
+TIP: Start the transcript and reference requests FIRST, before
+writing anything. They are the only items whose timeline you
+do not control. [~]
+
+
+---- PHASE 4: SUBMISSION ----
+
+GRI: submit through the Globalink portal before the deadline.
+16 September 2026, 1:00 p.m. Pacific for the 2027 cohort [XX].
+Note the time zone - 1:00 p.m. Pacific is 3:00 p.m. in Lima,
+same day.
+
+GRA: your host supervisor or their graduate office drives the
+submission [XX]. Ask them for the internal deadline the moment
+they agree - institution deadlines sit weeks before any
+external one.
+
+ELAP: apply through whichever channel exists - your home
+university's international office, or the Canadian host
+institution's own inbound call [XX]. Nothing sent directly to
+Global Affairs Canada will be read under the 2026-27 model.
+
+McCall MacBain: apply yourself at
+apply.mccallmacbainscholars.org [XX]. Separately, you must meet
+McGill admission requirements for an eligible master's or
+professional programme [XX]. Two processes, both required.
+
+TIP: Submit 48 hours early. Portal load spikes on deadline day
+and no program treats a failed upload as your problem. [~]
+
+
+---- PHASE 5: WAITING AND MATCHING (2-5 months) ----
+
+For GRI, a September application feeds a summer placement the
+following year - roughly a 9-month gap [~]. Results and
+matching land in between.
+
+What actually happens in this window [~]:
+  - Applications are screened for eligibility. Gate failures
+    are cut here without review.
+  - Surviving applications go to the supervisors whose projects
+    you ranked.
+  - A supervisor expresses interest, and a match is made.
+  - An offer or award letter issues, which is where the exact
+    funding amount is confirmed - Mitacs does not publish one
+    fixed stipend figure, the letter states it [X].
+
+TIP: Silence in month three is normal, not a rejection. Do not
+email the program office for status. Do keep the supervisor
+warm if you have one - a short note with a relevant paper is
+welcome; a "any news?" is not. [~]
+
+TIP: Apply to more than one thing in the same season. These
+timelines are long enough that a single application is a
+9-month bet on one outcome. [~]
+
+
+---- PHASE 6: ACCEPTED - THE LOGISTICS PHASE ----
+
+This is the phase the ELAP winner interview covers, and the
+phase I could not extract for you. Treat everything below as
+the checklist to VERIFY against that video and the official
+guidance, not as confirmed fact.
+
+IMMIGRATION [!!]
+  A short research placement in Canada may require a study
+  permit, a work permit, or fall under an exemption depending
+  on length, whether you are paid, and whether the work is
+  academic. I could not verify which applies to a 12-week
+  Mitacs placement in 2027, and getting this wrong is a
+  boarding-denied error, not a paperwork error.
+
+  ASK THE PROGRAM DIRECTLY, in writing, the moment you are
+  accepted. Then confirm against IRCC. Do not rely on a
+  YouTube video from 2022 for immigration guidance - this is
+  the single most likely thing in this whole file to have
+  changed.
+
+  Whatever the answer, processing times for Peruvian applicants
+  can run months. Start the day the offer lands.
+
+MONEY TIMING [~]
+  The gap that catches people: flights and first month's rent
+  are due BEFORE the first stipend payment arrives. Mitacs
+  funds airfare, housing, food and incidentals [X], but
+  reimbursement timing is a separate question from coverage.
+
+  Ask explicitly: is airfare booked for me, reimbursed after I
+  fly, or advanced? The answer changes whether you need roughly
+  CAD 2,000-3,000 of bridge money.
+
+  Enrolment fee support is reportedly capped at CAD 300 [X].
+  Anything above that is yours.
+
+HOUSING [~]
+  Canadian student housing markets are tight in Toronto,
+  Vancouver and Montreal, and a summer placement puts you in
+  the worst possible window.
+
+  - Ask the host university's international office about
+    on-campus summer residence FIRST. It is usually cheaper,
+    furnished, and requires no local credit history.
+  - Off campus, landlords may ask for Canadian credit history
+    or guarantors you do not have. Student residences and
+    university-affiliated housing sidestep this.
+  - Mitacs reportedly provides student mentors on campus [X].
+    Use them - a mentor who already lives there is worth more
+    than a week of listings research.
+  - Never wire a deposit for a place you have not had someone
+    physically verify.
+
+INSURANCE [X]
+  Mitacs reportedly provides emergency health insurance for
+  the internship period. Confirm what it excludes - emergency
+  cover is not the same as health cover.
+
+TIP: The highest-value thing in that ELAP interview is likely
+the flight and housing sequencing - what they booked, when,
+and what they wish they had done first. Extract it with the
+prompt in section 7 and paste the result under this section. [~]
+
+
+---- PHASE 7: ARRIVAL AND FIRST WEEKS ----
+
+  - Ask your supervisor for a first-week goal before you fly.
+    Arriving with a defined first task compresses the useless
+    orientation period from three weeks to three days. [~]
+  - Set up a local bank account and phone plan in week one.
+    Many stipend disbursements need a Canadian account. [~]
+  - Meet the lab's grad students, not just the PI. They decide
+    whether you get real work or busy work. [~]
+
+
+---- PHASE 8: CONVERTING IT INTO SOMETHING ----
+
+A 12-week placement is short. What makes it compound [~]:
+
+  - Ask in week two what a publishable contribution would look
+    like. Do not wait until week ten.
+  - Get the reference letter conversation started at week
+    eight, while the work is fresh and you are still in the
+    building.
+  - The Mitacs Globalink pathway is explicitly designed to feed
+    graduate study in Canada. If you want to return for a
+    master's, say so to your supervisor before you leave. A
+    supervisor who knows you want to come back writes a
+    different letter than one who thinks you are done. [~]
+
+
+================================================================
+4. PROGRAM DOSSIERS
+================================================================
+
+----------------------------------------------------------------
+4.1  MCCALL MACBAIN SCHOLARSHIP
+----------------------------------------------------------------
+Funder      : McCall MacBain Foundation with McGill University [XX]
+Level       : Master's or professional degree at McGill [XX]
+Route       : Apply directly. No nomination, no supervisor. [XX]
+
+VALUE
+  Full tuition and university fees for the normal duration of
+  the programme, plus CAD 2,300 per month living stipend during
+  academic terms, plus a one-time relocation grant to
+  Montreal. [XX]
+
+DEADLINES
+  Applications opened 1 June 2026 for the 2027 cohort. [X]
+  19 Aug 2026, 4pm ET - universities outside Canada/US  [XX]
+  23 Sep 2026, 4pm ET - Canadian/US universities and
+                        Canadians abroad                [XX]
+  Tier is decided mainly by where you study or studied,
+  not by citizenship. [X]
+
+ELIGIBILITY
+  Meet ONE of:
+   - on track to complete your first bachelor's by Aug 2027
+   - earned your first bachelor's in January 2021 or later
+   - earned it more than five years ago AND were 30 or younger
+     on 1 January 2026
+  PLUS: independently meet McGill admission requirements for an
+  eligible master's or professional programme, including
+  language requirements. [XX]
+
+FIT BY STATUS
+  Undergrad 2y+   : NO      - too early, must finish by Aug 2027
+  Final-year UG   : YES     - squarely the target
+  New grad        : YES     - if bachelor's earned Jan 2021+
+  Grad student    : MAYBE   - funds a NEW McGill degree
+
+OFFICIAL : https://mccallmacbainscholars.org/apply/
+VIDEOS   : none verified
+
+----------------------------------------------------------------
+4.2  MITACS GLOBALINK RESEARCH INTERNSHIP (GRI)
+----------------------------------------------------------------
+Funder      : Mitacs [XX]
+Level       : Undergraduate, or combined undergrad/master's [XX]
+Duration    : 12 weeks [XX]
+Route       : Apply directly via globalink.mitacs.ca [XX]
+
+DEADLINE
+  16 September 2026, 1:00 p.m. Pacific, 2027 cohort [XX]
+
+VALUE
+  No single published stipend figure. Mitacs funds airfare,
+  housing, food and incidentals, enrolment fees capped at
+  CAD 300, and emergency health insurance. Exact amount is
+  confirmed in the award letter. [X]
+
+ELIGIBILITY
+  - At least 18, enrolled full-time in an eligible undergrad
+    or combined undergrad/master's programme [XX]
+  - Normally two years of undergrad completed, or in second
+    year, subject to country-specific conditions [XX]
+  - Reported: one to three semesters remaining as of fall
+    2027 [X]
+  - Apply to 3-10 projects from at least 3 provinces [X]
+
+ELIGIBLE COUNTRIES (reported, 2027) [X]
+  Austria, Brazil, Chile, China, Colombia, Finland, France,
+  Germany, Hong Kong, India, Jordan, Mexico, Pakistan, PERU,
+  Singapore, South Korea, Taiwan, Thailand, Tunisia, Ukraine,
+  United Kingdom, United States.
+
+  Peru is on the list. Your specific institution must also be
+  on the Mitacs eligible-institution list - country eligibility
+  alone is not enough.
+
+WATCH OUT
+  Some countries route through a national partner with tighter
+  rules. India's AICTE stream is restricted to B.E./B.Tech.
+  students [XX]. Do not assume the general rules apply to your
+  country's stream without checking.
+
+FIT BY STATUS
+  Undergrad 2y+   : YES   - core target
+  Final-year UG   : MAYBE - semesters-remaining rule may kill it
+  New grad        : NO    - needs current enrolment
+  Grad student    : NO    - see the GRA instead
+
+OFFICIAL : https://www.mitacs.ca/our-programs/globalink-research-internship/
+PORTAL   : https://globalink.mitacs.ca/
+
+VIDEOS (all confirmed to exist; none watched)
+  How to apply for the internship? | MITACS GLOBALINK RESEARCH
+  INTERNSHIP | Application Timeline
+  22 June 2022, English, GRI intern at ETS Montreal
+  https://www.youtube.com/watch?v=3DZPRYGjN5M
+
+  (APPLY NOW) FULLY FUNDED INTERNSHIP in CANADA | Mitacs
+  Globalink Research Internship 2023
+  16 August 2023, English, full application walkthrough
+  https://www.youtube.com/watch?v=BNLtRvG9LcM
+
+  Journey to Mitacs | Suggestion from Mitacs Intern - 2022 for
+  Globalink Internship
+  30 August 2022, English, intern advice
+  https://www.youtube.com/watch?v=OBaPmcbxLpg
+
+  STALENESS: all three are 2022-2023 cycles. Portal walkthroughs
+  and timelines in them are out of date. Use for texture and
+  interview/matching advice, not for dates.
+
+----------------------------------------------------------------
+4.3  MITACS GLOBALINK RESEARCH AWARD (GRA)
+----------------------------------------------------------------
+Funder      : Mitacs [XX]
+Level       : Senior undergrad, graduate students, postdocs [XX]
+Value       : CAD 6,000 for senior undergrad and grad students [X]
+Duration    : One 12-48 week project, or two 12-24 week
+              projects [X]
+Direction   : Inbound to Canada OR outbound from Canada [XX]
+Deadline    : None public - set by the Canadian host
+              institution [XX]
+Supervisor  : REQUIRED before you apply. This is the gate. [XX]
+
+WHY THIS MATTERS
+  This is the graduate-level counterpart to the GRI, and most
+  creator content conflates the two. If you are past
+  undergraduate, GRI advice does not transfer - there is no
+  portal to apply through, and no deadline to hit. There is a
+  supervisor to convince.
+
+FIT BY STATUS
+  Undergrad 2y+   : NO    - senior undergrad and above
+  Final-year UG   : MAYBE - needs a committed supervisor
+  New grad        : NO    - needs active enrolment
+  Grad student    : YES   - direct target
+
+OFFICIAL : https://www.mitacs.ca/our-programs/globalink-research-award/
+VIDEOS   : none verified. Most Mitacs video content covers the
+           GRI and conflates it with this. Be careful.
+
+----------------------------------------------------------------
+4.4  EMERGING LEADERS IN THE AMERICAS PROGRAM (ELAP)
+----------------------------------------------------------------
+Funder      : Global Affairs Canada via EduCanada [XX]
+Route       : Selected by the Canadian host institution. There
+              is NO direct student application to Global
+              Affairs Canada. [XX]
+
+VALUE [X]
+  CAD 8,200  - college, undergrad or grad, four months or one
+               academic term
+  CAD 11,100 - graduate students, five to six months of
+               research
+  Host institutions must waive tuition entirely. [XX]
+
+  NOTE: an earlier figure of CAD 10,200 was circulating for the
+  higher tier. The search result returned 11,100. Both are
+  single-source. Verify before budgeting.
+
+2026-27 REDESIGN - the important part
+  Canadian institutions are now responsible for student
+  selection, a shift away from the previous Global Affairs
+  centred process. [XX]
+  Institutions receive up to $150,000 per project covering
+  scholarships plus administrative support. [X]
+  Results communicated to Canadian institutions May 2026. [X]
+  Projects must complete no later than 30 September 2027. [XX]
+
+ELIGIBILITY
+  - Enrolled at a post-secondary institution in Latin America
+    or the Caribbean, returning there after the exchange [XX]
+  - Selected by a Canadian institution holding a funded ELAP
+    project [XX]
+
+HOW TO ACTUALLY GET IN
+  1. Ask your home university's international office which
+     Canadian institutions they hold ELAP agreements with.
+     Fastest route, most commonly skipped.
+  2. Check the ELAP pages of Canadian universities directly -
+     many post their own inbound calls and internal deadlines.
+  3. Anything sent to Global Affairs Canada goes nowhere.
+
+FIT BY STATUS
+  Undergrad 2y+   : MAYBE - need a Canadian project to take you
+  Final-year UG   : MAYBE - must outlast the exchange enrolment
+  New grad        : NO    - enrolment anchor is required
+  Grad student    : MAYBE - higher award tier, same gate
+
+OFFICIAL : https://www.educanada.ca/scholarships-bourses/can/institutions/elap-pfla.aspx?lang=eng
+
+VIDEOS (all confirmed to exist; none watched)
+  Quieres una Beca para Estudiar GRATIS en Canada? | ELAP -
+  alojamiento, vuelos y mas!
+  5 August 2025, Spanish, interview with an ELAP winner
+  https://www.youtube.com/watch?v=fgQQn6ks6gQ
+  ** This is the housing-and-flights one you asked about. **
+
+  Beca ELAP (Short)
+  19 February 2026, Spanish, scholar named Diego
+  https://www.youtube.com/shorts/BdKTBsOFqMI
+
+  OPORTUNIDADES ACADEMICAS Y DE INVESTIGACION EN CANADA -
+  BECAS ELAP
+  8 July 2025, Spanish, academic and research routes
+  https://www.youtube.com/watch?v=m96fV4pIAgI
+
+  STALENESS: every one of these predates or straddles the
+  2026-27 redesign. They describe the OLD process where
+  Global Affairs Canada sat at the centre. Their housing,
+  flight and lived-experience content is still good. Their
+  description of HOW SELECTION WORKS is now wrong.
+
+  OTHER ELAP VIDEOS SURFACED (exist, not assessed):
+  https://www.youtube.com/watch?v=gVkIrvaCo4Y  (UTB graduate)
+  https://www.youtube.com/watch?v=VkO-anCorww  (postulacion tips)
+  https://www.youtube.com/watch?v=24ECe83OfNs  (2025 step by step)
+  https://www.youtube.com/watch?v=wjg4HbHG9tk  (charla informativa)
+  https://www.youtube.com/watch?v=Kx6eV8UPY9k  (que se siente ganar)
+
+----------------------------------------------------------------
+4.5  PRONABEC - BECA GENERACION BICENTENARIO
+----------------------------------------------------------------
+Funder      : PRONABEC, Government of Peru [XX]
+Level       : Master's or doctorate, in person, abroad [XX]
+Route       : Apply directly to PRONABEC during an open
+              convocatoria [XX]
+
+ELIGIBILITY [X]
+  - Peruvian national with a conferred bachiller, professional
+    title, or technical professional title
+  - Institution must rank within the top 400 internationally
+  - No age limit
+  - Means tested: high academic performance combined with
+    insufficient economic resources
+
+RELATED PROGRAMMES [XX]
+  Beca Presidente de la Republica - tuition, living, health
+    insurance, flights, settling-in costs
+  Beca Alianza del Pacifico
+  Beca OEA
+  Beca Posgrado Brasil
+
+DEADLINES
+  Vary by convocatoria and are not fixed year to year. Any date
+  you read on an aggregator blog is worthless - check
+  pronabec.gob.pe. [XX]
+
+FIT BY STATUS
+  Undergrad 2y+   : NO    - needs conferred bachiller
+  Final-year UG   : MAYBE - only once actually conferred
+  New grad        : YES   - built for exactly this
+  Grad student    : MAYBE - check if in-progress study
+                            disqualifies
+
+STRATEGIC NOTE
+  This is the only means-tested programme in this file, and the
+  only one where being Peruvian is an advantage rather than a
+  neutral fact. It also stacks differently: PRONABEC funds you
+  to go anywhere in the top 400, so it is not competing with
+  McCall MacBain, it is an alternative funding source for a
+  similar destination.
+
+OFFICIAL : https://www.pronabec.gob.pe/beca-generacion-bicentenario/
+OVERVIEW : https://www.pronabec.gob.pe/becas-de-cooperacion-internacional/
+VIDEOS   : none verified
+
+
+================================================================
+5. FIT MATRIX - all programs, all statuses
+================================================================
+
+                         UG2+   FINAL   NEWGRAD  GRAD
+  McCall MacBain          NO     YES     YES      MAYBE
+  Mitacs GRI              YES    MAYBE   NO       NO
+  Mitacs GRA              NO     MAYBE   NO       YES
+  ELAP                    MAYBE  MAYBE   NO       MAYBE
+  PRONABEC Bicentenario   NO     MAYBE   YES      MAYBE
+
+  UG2+    = enrolled undergrad, 2+ years completed
+  FINAL   = final-year undergrad
+  NEWGRAD = degree conferred, not currently enrolled
+  GRAD    = enrolled in a master's or PhD
+
+
+================================================================
+6. VERIFIED VIDEO INDEX
+================================================================
+
+All six IDs below were confirmed to exist in the web search
+index, with the titles and dates shown. None were watched -
+youtube.com was blocked at the network layer.
+
+MITACS
+  https://www.youtube.com/watch?v=3DZPRYGjN5M
+    "How to apply for the internship? | MITACS GLOBALINK
+     RESEARCH INTERNSHIP | Application Timeline"
+    22 June 2022 - English - GRI intern at ETS Montreal
+
+  https://www.youtube.com/watch?v=BNLtRvG9LcM
+    "(APPLY NOW) FULLY FUNDED INTERNSHIP in CANADA | Mitacs
+     Globalink Research Internship 2023"
+    16 August 2023 - English
+
+  https://www.youtube.com/watch?v=OBaPmcbxLpg
+    "Journey to Mitacs | Suggestion from Mitacs Intern - 2022
+     for Globalink Internship"
+    30 August 2022 - English
+
+ELAP
+  https://www.youtube.com/watch?v=fgQQn6ks6gQ
+    "Quieres una Beca para Estudiar GRATIS en Canada? | ELAP -
+     alojamiento, vuelos y mas!"
+    5 August 2025 - Spanish - THE HOUSING/FLIGHTS ONE
+
+  https://www.youtube.com/shorts/BdKTBsOFqMI
+    "Beca ELAP"
+    19 February 2026 - Spanish - Short, scholar named Diego
+
+  https://www.youtube.com/watch?v=m96fV4pIAgI
+    "OPORTUNIDADES ACADEMICAS Y DE INVESTIGACION EN CANADA -
+     BECAS ELAP"
+    8 July 2025 - Spanish
+
+ALSO SURFACED (exist, relevance not assessed)
+  https://www.youtube.com/watch?v=psxlBsPhKmg
+    "Mitacs Globalink 2027: Fully Funded Research in Canada as
+     a Bachelor's Student"  - the only 2027-cycle video found
+  https://www.youtube.com/watch?v=dw3_X1zixls
+    "2025 GLOBALINK RESEARCH AWARD: Quantum stream + how to
+     apply"  - covers the GRA, which nothing else does
+  https://www.youtube.com/watch?v=AnZqv2s5zE0
+  https://www.youtube.com/watch?v=iYX4hRKVMAM
+    "Mitacs Globalink Research Award Info Session"
+  https://www.youtube.com/shorts/h1FfdFenO_Y
+  https://www.youtube.com/playlist?list=PLK2BJtrjoQpYnIFliBpnu2z_GaWaLMmeN
+    Mitacs Globalink official playlist
+
+  Of these, psxlBsPhKmg and iYX4hRKVMAM are the two most worth
+  your time - one is the only 2027-cycle content found, the
+  other covers the GRA which no other video here does.
+
+
+================================================================
+7. EXTRACTION PROMPT
+================================================================
+
+Paste this into a new conversation with the video link or file.
+
+---BEGIN PROMPT---
+Transcribe this video in full, then restructure the transcript
+into a factual brief. Output two sections.
+
+First, a verbatim transcript with speaker labels and rough
+timestamps every 30 seconds.
+
+Second, an extraction table with these columns: program name,
+funding body, who is eligible, award value in CAD, duration,
+deadline mentioned, whether the applicant applies directly or
+must be nominated, whether a host supervisor is required first,
+and required documents.
+
+Pull only what the speaker actually says. For anything implied
+but not stated, mark it "not stated" rather than inferring.
+
+At the end, list every date, dollar figure, and URL mentioned,
+and flag which claims sound like they could be out of date
+given the video's upload year.
+
+Do not add advice or context from your own knowledge; this is
+an extraction task.
+---END PROMPT---
+
+FOR THE HOUSING/FLIGHTS VIDEO SPECIFICALLY, append this:
+
+---BEGIN ADDENDUM---
+Additionally, extract a logistics section covering: how they
+found housing and how far in advance, what they paid, whether
+flights were booked for them or reimbursed, how long
+reimbursement took, what they had to pay out of pocket before
+any funding arrived, what visa or permit they needed and how
+long it took, and anything they say they would do differently.
+Quote them directly where possible. Mark anything not
+mentioned as "not stated".
+---END ADDENDUM---
+
+WHY the "do not add context" line matters: if you merge six
+videos into one dataset, you want the model's inferences kept
+out of the extraction layer so conflicts between sources stay
+visible instead of being silently smoothed over. Reconcile
+them yourself afterwards.
+
+
+================================================================
+8. INSTAGRAM AND TIKTOK SEARCH STRINGS
+================================================================
+
+Neither platform is meaningfully indexed by web search. These
+are search strings, NOT verified links. Nothing below was
+confirmed to exist.
+
+TIKTOK
+  mitacs globalink
+  #mitacs
+  beca ELAP Canada
+  #becaelap
+  estudiar en Canada beca
+  #becascanada
+  McCall MacBain scholarship
+  PRONABEC beca posgrado extranjero
+
+INSTAGRAM - official accounts to check
+  @mitacs_canada
+  @educanada
+  @pronabec
+  @mccallmacbain
+
+  Handles unverified. Confirm each resolves before relying on
+  it - impersonation accounts are common in the scholarship
+  space and they are how people lose application fees to
+  programs that do not charge application fees.
+
+
+================================================================
+9. IMMEDIATE ACTIONS
+================================================================
+
+  [ ] Determine which McCall MacBain deadline tier you are in.
+      Decided by where you studied, not citizenship. This is
+      the highest-value 10 minutes in this file.
+
+  [ ] If Canadian/US tier: 23 September 2026, 4pm ET. Confirm
+      the date on the official site today.
+
+  [ ] If you are still enrolled as an undergrad: check whether
+      your institution is on the Mitacs eligible-institution
+      list for Peru, then decide on the 16 September deadline.
+
+  [ ] Watch fgQQn6ks6gQ with the section 7 prompt and paste the
+      logistics output under section 3, phase 6.
+
+  [ ] Watch psxlBsPhKmg - the only 2027-cycle video found.
+
+  [ ] Check pronabec.gob.pe for the current convocatoria
+      calendar. No aggregator date is trustworthy here.
+
+  [ ] Verify the ELAP higher-tier award figure. Two numbers are
+      circulating: CAD 10,200 and CAD 11,100.
+
+
+================================================================
+10. SOURCE NOTES
+================================================================
+
+Compiled 7 September 2026 from web search result summaries.
+
+Direct fetches of the following were BLOCKED by network policy
+and could not be read:
+  www.mitacs.ca
+  www.educanada.ca
+  www.youtube.com  (including the oEmbed metadata endpoint)
+
+Video existence, titles and upload dates were confirmed via the
+search index only. No video was watched.
+
+Secondary aggregators appeared in results for several figures
+(scholarship blogs, university pages). Where two independent
+results agreed, the claim is marked [XX]. Where one result
+carried it, [X]. Neither marking makes it official.
+
+Treat this file as a map of where to look and what to ask,
+not as a source of record. Every date and dollar figure needs
+one confirmation click before it drives a decision.
+
+================================================================
+END
+================================================================
