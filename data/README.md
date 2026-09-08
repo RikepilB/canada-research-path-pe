@@ -5,6 +5,7 @@ La web lee estos archivos directamente:
 - `opportunities.json`: programas, becas y rutas de investigación.
 - `stories.json`: casos públicos de beneficiarios con su fuente.
 - `contacts.json`: oficinas y contactos institucionales públicos.
+- `timeline.json`: fases del año, rangos de preparación y fechas confirmadas.
 
 ## Editar desde GitHub
 

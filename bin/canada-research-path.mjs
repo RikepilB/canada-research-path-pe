@@ -5,7 +5,10 @@ import { dirname, join } from "node:path";
 import { findOpportunity, matchOpportunities, validateCatalog } from "../lib/catalog.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const opportunities = JSON.parse(await readFile(join(root, "data", "opportunities.json"), "utf8"));
+const [opportunities, timeline] = await Promise.all([
+  readFile(join(root, "data", "opportunities.json"), "utf8").then(JSON.parse),
+  readFile(join(root, "data", "timeline.json"), "utf8").then(JSON.parse)
+]);
 const [command = "help", ...args] = process.argv.slice(2);
 const flags = Object.fromEntries(args.filter((arg) => arg.startsWith("--")).map((arg) => {
   const [key, ...parts] = arg.slice(2).split("=");
@@ -41,6 +44,9 @@ switch (command) {
     print(`Catálogo válido: ${opportunities.length} rutas, ${opportunities.filter((item) => item.eligiblePeru).length} aplicables a Perú.`);
     break;
   }
+  case "timeline":
+    print(flags.json !== undefined ? timeline : timeline.map(timelineLine).join("\n"));
+    break;
   case "invivo":
     print(flags.json !== undefined ? {
       name: "InVivoLab",
@@ -51,11 +57,15 @@ switch (command) {
     break;
   case "help":
   default:
-    print(`Canada Research Path PE\n\nComandos:\n  list [--json] [--all]\n  show <id> [--json]\n  match --level=pregrado --institution=otra --goal=pasantia [--json]\n  validate\n  invivo [--json]\n\nNiveles: secundaria, pregrado, egresado, maestria, doctorado, posdoctorado, investigador\nInstituciones: cientifica, unalm, otra\nMetas: pasantia, intercambio, pregrado-completo, maestria-completa, doctorado-completo, posdoctorado, empleo-investigacion`);
+    print(`Canada Research Path PE\n\nComandos:\n  list [--json] [--all]\n  show <id> [--json]\n  match --level=pregrado --institution=otra --goal=pasantia [--json]\n  timeline [--json]\n  validate\n  invivo [--json]\n\nNiveles: secundaria, pregrado, egresado, maestria, doctorado, posdoctorado, investigador\nInstituciones: cientifica, unalm, otra\nMetas: pasantia, intercambio, pregrado-completo, maestria-completa, doctorado-completo, posdoctorado, empleo-investigacion`);
 }
 
 function line(item) {
   return `${item.id.padEnd(28)} ${item.statusLabel} · ${item.name}`;
+}
+
+function timelineLine(item) {
+  return `${item.period.padEnd(23)} ${item.stage.padEnd(19)} ${item.title} · ${item.duration}`;
 }
 
 function formatDetails(item) {

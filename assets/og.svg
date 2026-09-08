@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#f4f0e7"/>
-  <circle cx="1060" cy="-10" r="310" fill="#174f43"/>
-  <circle cx="1090" cy="530" r="180" fill="#c8372d" opacity=".92"/>
-  <path d="M0 520 C260 420 380 610 650 505 C825 437 925 467 1200 380 V630 H0Z" fill="#e3e8e2"/>
-  <circle cx="112" cy="105" r="45" fill="#174f43"/>
-  <text x="112" y="117" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="white">PE</text>
-  <text x="72" y="210" font-family="Georgia,serif" font-size="76" font-weight="700" fill="#182320">Canada Research</text>
-  <text x="72" y="295" font-family="Georgia,serif" font-size="76" font-weight="700" fill="#182320">Path PE</text>
-  <text x="76" y="368" font-family="Arial,sans-serif" font-size="29" fill="#5d6a65">Becas e investigación para peruanos en Canadá</text>
-  <rect x="76" y="415" width="352" height="58" rx="12" fill="#174f43"/>
-  <text x="252" y="452" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="white">Encuentra tu ruta</text>
+  <rect width="1200" height="630" fill="#f2f5f4"/>
+  <rect x="845" width="355" height="630" fill="#143541"/>
+  <rect x="845" y="455" width="355" height="175" fill="#c62f35"/>
+  <path d="M0 544 H845 V630 H0Z" fill="#dfe5e5"/>
+  <rect x="72" y="60" width="82" height="82" rx="6" fill="#c62f35"/>
+  <text x="113" y="113" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#fbfcfb">PE</text>
+  <text x="72" y="245" font-family="Arial Narrow,Arial,sans-serif" font-size="76" font-weight="700" fill="#14232b">Canada Research</text>
+  <text x="72" y="325" font-family="Arial Narrow,Arial,sans-serif" font-size="76" font-weight="700" fill="#14232b">Path PE</text>
+  <text x="76" y="392" font-family="Arial,sans-serif" font-size="29" fill="#56666d">Investigación tecnológica para peruanos en Canadá</text>
+  <rect x="76" y="438" width="352" height="58" rx="4" fill="#c62f35"/>
+  <text x="252" y="475" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#fbfcfb">Encuentra tu ruta</text>
 </svg>

@@ -3,7 +3,7 @@
 
   # Canada Research Path PE
 
-  **Una ruta abierta y en español para investigar entre Perú y Canadá.**
+  **Una ruta abierta y en español para investigación tecnológica entre Perú y Canadá.**
 
   Becas · pasantías · supervisores · laboratorios · preparación · contactos
 
@@ -16,7 +16,7 @@
 
 ## ¿Para quién es esta guía?
 
-Para una persona peruana que quiere hacer investigación en Canadá y necesita respuestas prácticas:
+Para una persona peruana que quiere hacer investigación tecnológica en Canadá y necesita respuestas prácticas:
 
 - ¿Qué programas existen para mi nivel?
 - ¿Puedo postular desde mi universidad?
@@ -25,7 +25,7 @@ Para una persona peruana que quiere hacer investigación en Canadá y necesita r
 - ¿Cuánto financiamiento ofrece cada ruta?
 - ¿A quién puedo escribir?
 
-El foco principal es **tecnología e investigación aplicada**, sin excluir otras disciplinas elegibles.
+El foco principal es **tech research**: IA, software, ciencia de datos, ingeniería, robótica, ciberseguridad y bioinformática. Algunas convocatorias aceptan otras disciplinas; el catálogo las conserva cuando ofrecen una ruta útil, pero la selección y las recomendaciones priorizan tecnología e investigación aplicada.
 
 > [!IMPORTANT]
 > Las fechas y reglas cambian. La guía ayuda a filtrar opciones, pero cada ficha lleva a la fuente oficial que debes revisar antes de postular.
@@ -61,6 +61,7 @@ Cada resultado explica el plazo, financiamiento, forma de postulación y la acci
 | Sección | Para qué sirve |
 |---|---|
 | **Encuentra tu ruta** | Filtra oportunidades compatibles con tu perfil. |
+| **Calendario anual** | Sigue el avance del año y los intervalos para preparar, conectar, documentar, postular y viajar. |
 | **Programas** | Compara Mitacs, ELAP, CGRS-D, becas universitarias y otras rutas. |
 | **Universidades** | Identifica puertas institucionales y oficinas de movilidad. |
 | **Cómo postular** | Organiza supervisor, documentos y calendario. |
@@ -101,6 +102,7 @@ Toda la información principal está en archivos sencillos dentro de [`data/`](d
 - [`opportunities.json`](data/opportunities.json): programas, fechas, requisitos y fuentes.
 - [`stories.json`](data/stories.json): casos públicos de peruanos.
 - [`contacts.json`](data/contacts.json): contactos institucionales publicados.
+- [`timeline.json`](data/timeline.json): etapas, fechas y rangos de preparación del año.
 
 Para corregir una entrada desde GitHub:
 
@@ -122,6 +124,9 @@ node bin/canada-research-path.mjs list
 
 # Consultar una ruta concreta
 node bin/canada-research-path.mjs show elap
+
+# Ver el calendario anual de preparación y postulación
+node bin/canada-research-path.mjs timeline
 
 # Buscar según un perfil
 node bin/canada-research-path.mjs match \

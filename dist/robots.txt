@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://canada-research-path-pe.ridi-pillaca.chatgpt.site/sitemap.xml
+Sitemap: https://rikepilb.github.io/canada-research-path-pe/sitemap.xml

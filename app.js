@@ -52,16 +52,64 @@ function renderContacts(contacts) {
     </article>`).join("");
 }
 
+function renderYearProgress(now = new Date()) {
+  const year = now.getFullYear();
+  const start = new Date(year, 0, 1);
+  const end = new Date(year + 1, 0, 1);
+  const progress = Math.min(100, Math.max(0, ((now - start) / (end - start)) * 100));
+  const formatted = new Intl.DateTimeFormat("es-PE", {
+    weekday: "long", year: "numeric", month: "long", day: "numeric"
+  }).format(now);
+
+  $("#today-label").textContent = formatted.charAt(0).toUpperCase() + formatted.slice(1);
+  $("#year-progress-label").textContent = `${Math.round(progress)}% del año`;
+  $("#year-progress").style.width = `${progress}%`;
+  $("#today-marker").style.left = `${progress}%`;
+  $("#year-track").setAttribute("aria-label", `Avance de ${year}: ${Math.round(progress)} por ciento`);
+}
+
+function renderTimeline(items, opportunities, now = new Date()) {
+  const currentMonth = now.getMonth() + 1;
+  const sources = new Map(opportunities.map((item) => [item.id, item]));
+  $("#timeline").innerHTML = items.map((item) => {
+    const deadline = item.deadlineISO ? new Date(item.deadlineISO) : null;
+    const isCurrent = item.months.includes(currentMonth) && (!deadline || now <= deadline);
+    const isConfirmed = item.timingType === "Fecha oficial verificada";
+    const source = item.sourceId ? sources.get(item.sourceId) : null;
+    return `
+      <article class="timeline-item${isCurrent ? " current" : ""}">
+        <div class="timeline-when">
+          <span class="timeline-stage">${escapeHtml(item.stage)}</span>
+          <strong>${escapeHtml(item.period)}</strong>
+          ${isCurrent ? '<span class="now-badge">En ventana este mes</span>' : ""}
+        </div>
+        <div class="timeline-work">
+          <h3>${escapeHtml(item.title)}</h3>
+          <p class="timeline-duration">Tiempo de trabajo: ${escapeHtml(item.duration)}</p>
+          <ul>${item.actions.map((action) => `<li>${escapeHtml(action)}</li>`).join("")}</ul>
+        </div>
+        <div class="timeline-result">
+          <span class="timing-type${isConfirmed ? " confirmed" : ""}">${escapeHtml(item.timingType)}</span>
+          <p><strong>Resultado:</strong> ${escapeHtml(item.output)}</p>
+          ${source ? `<a href="${escapeHtml(source.officialUrl)}" target="_blank" rel="noopener">Ver fecha oficial ↗</a>` : ""}
+        </div>
+      </article>`;
+  }).join("");
+}
+
 async function boot() {
   try {
-    const [opportunities, stories, contacts] = await Promise.all([
+    const [opportunities, stories, contacts, timeline] = await Promise.all([
       loadJson("./data/opportunities.json"),
       loadJson("./data/stories.json"),
-      loadJson("./data/contacts.json")
+      loadJson("./data/contacts.json"),
+      loadJson("./data/timeline.json")
     ]);
     renderMatches(opportunities);
     renderStories(stories);
     renderContacts(contacts);
+    renderYearProgress();
+    renderTimeline(timeline, opportunities);
     ["#level", "#institution", "#goal"].forEach((selector) => $(selector).addEventListener("change", () => renderMatches(opportunities)));
   } catch (error) {
     console.error(error);
