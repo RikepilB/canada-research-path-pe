@@ -1,0 +1,104 @@
+[
+  {
+    "id": "definir-ruta",
+    "months": [8, 9],
+    "period": "Agosto–septiembre",
+    "stage": "Preparar",
+    "title": "Define tema, nivel y ruta de financiación",
+    "duration": "1–2 semanas",
+    "actions": ["Delimita un área tecnológica concreta", "Confirma nivel, matrícula y universidad elegible", "Abre una carpeta con requisitos y fechas"],
+    "output": "Lista corta de 2–3 rutas compatibles",
+    "timingType": "Intervalo de planificación"
+  },
+  {
+    "id": "mitacs-gri",
+    "months": [8, 9],
+    "period": "Hasta 16 sep 2026",
+    "stage": "Aplicar",
+    "title": "Mitacs GRI 2027",
+    "duration": "1–3 semanas con documentos listos",
+    "deadlineISO": "2026-09-16T13:00:00-07:00",
+    "actions": ["Revisa proyectos", "Prepara CV, notas y referencia", "Selecciona 3–10 proyectos en al menos 3 provincias"],
+    "output": "Solicitud enviada antes de la 1:00 p. m. PT",
+    "timingType": "Fecha oficial verificada",
+    "sourceId": "mitacs-gri-2027"
+  },
+  {
+    "id": "mapear-laboratorios",
+    "months": [9, 10, 11],
+    "period": "Septiembre–noviembre",
+    "stage": "Investigar",
+    "title": "Mapea laboratorios y supervisores",
+    "duration": "2–4 semanas",
+    "actions": ["Lee 3–4 trabajos por laboratorio", "Compara métodos y proyectos activos", "Prioriza 15–20 supervisores por afinidad"],
+    "output": "Matriz de laboratorios con razones concretas de encaje",
+    "timingType": "Intervalo recomendado"
+  },
+  {
+    "id": "contactar",
+    "months": [10, 11, 12, 1],
+    "period": "Octubre–enero",
+    "stage": "Conectar",
+    "title": "Habla con supervisores y oficinas internacionales",
+    "duration": "4–8 semanas; 2–3 rondas de contacto",
+    "actions": ["Envía correos breves y personalizados", "Da seguimiento después de 7–10 días hábiles", "Confirma nominación, cupo y financiación"],
+    "output": "Supervisor interesado o ruta institucional confirmada",
+    "timingType": "Intervalo recomendado"
+  },
+  {
+    "id": "documentacion",
+    "months": [11, 12, 1, 2],
+    "period": "Noviembre–febrero",
+    "stage": "Documentar",
+    "title": "Reúne y verifica la documentación",
+    "duration": "4–10 semanas en paralelo",
+    "actions": ["Solicita historial oficial y cartas", "Verifica pasaporte e idioma", "Traduce o certifica solo cuando el programa lo exija", "Revisa nombres, fechas y firmas"],
+    "output": "Expediente completo y control de versiones",
+    "timingType": "Intervalo recomendado"
+  },
+  {
+    "id": "elap-institucional",
+    "months": [1, 2, 3],
+    "period": "Enero–marzo",
+    "stage": "Aplicar",
+    "title": "Ventana institucional ELAP",
+    "duration": "2–6 semanas según universidad",
+    "actions": ["Entrega antes del plazo interno", "La institución canadiense selecciona y nomina", "Guarda confirmaciones y formularios finales"],
+    "output": "Candidatura institucional presentada",
+    "timingType": "Patrón anual; confirmar cada ciclo",
+    "sourceId": "elap"
+  },
+  {
+    "id": "evaluacion",
+    "months": [3, 4, 5],
+    "period": "Marzo–mayo",
+    "stage": "Procesamiento",
+    "title": "Evaluación y respuesta",
+    "duration": "6–16 semanas, según programa",
+    "actions": ["Responde solicitudes de información", "Mantén contacto con anfitrión", "Prepara un plan alternativo sin duplicar compromisos"],
+    "output": "Decisión, lista de espera o siguiente instrucción",
+    "timingType": "Estimación; no es garantía"
+  },
+  {
+    "id": "migracion-logistica",
+    "months": [4, 5, 6, 7, 8],
+    "period": "Abril–agosto",
+    "stage": "Verificar y viajar",
+    "title": "Permisos, visa y logística",
+    "duration": "Reserva 3–6 meses",
+    "actions": ["Confirma la categoría con la institución", "Inicia TRV o permiso aplicable", "Presupuesta alojamiento y llegada", "Añade hasta ~2 meses si corresponde examen médico"],
+    "output": "Autorización de viaje y plan de llegada",
+    "timingType": "Margen de planificación; verificar con IRCC"
+  },
+  {
+    "id": "estancia",
+    "months": [5, 6, 7, 8, 9, 10],
+    "period": "Mayo–octubre",
+    "stage": "Investigar",
+    "title": "Estancia, resultados y red profesional",
+    "duration": "12 semanas o 4–6 meses según ruta",
+    "actions": ["Alinea entregables con el supervisor", "Documenta resultados", "Presenta, publica o deja una colaboración activa"],
+    "output": "Resultado técnico demostrable y contactos duraderos",
+    "timingType": "Ventana habitual; depende del programa"
+  }
+]

@@ -10,7 +10,7 @@ Estudiantes e investigadores peruanos, especialmente de tecnología, que conocen
 
 ## Carácter
 
-Editorial, confiable y cercano. El verde bosque, el papel cálido y los titulares con serif evocan una guía de campo. La interfaz evita el aspecto de un portal institucional genérico.
+Práctico, técnico y cercano. El azul tinta y el rojo peruano evocan una guía de campo tecnológica y un tablero de movilidad. La interfaz evita la estética de landing SaaS, la serif editorial genérica y las cuadrículas interminables de tarjetas.
 
 ## Jerarquía
 
